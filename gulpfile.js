@@ -66,6 +66,7 @@ const paths = {
         svg: `${config.path.source}/svg/*.svg`,
         json: `${config.path.source}/**/*.json`,
         xml: `${config.path.source}/**/*.xml`,
+        static_files: `${config.path.source}/static/**/*`,
     },
 
     watch: {
@@ -78,6 +79,7 @@ const paths = {
         svg: `${config.path.source}/svg/*.svg`,
         json: `${config.path.source}/**/*.json`,
         xml: `${config.path.source}/**/*.xml`,
+        static_files: `${config.path.source}/static/**/*`,
     },
 
     // Part for browser-sync plugin
@@ -97,6 +99,9 @@ gulp.task('browser-sync', () => {
             directory: true
         },
 
+        // Watch files for changes
+        watch: true,
+
         // Add HTTP access control (CORS) headers to assets served by Browsersync
         cors: true,
 
@@ -109,7 +114,7 @@ gulp.task('browser-sync', () => {
     });
 
     // BrowserSync's watcher
-    browserSync.watch(paths.sync.watch).on('change', browserSync.reload);
+    // browserSync.watch(paths.sync.watch).on('change', browserSync.reload);
 });
 
 
@@ -131,10 +136,14 @@ gulp.task('css', () => {
         .pipe(autoprefixer())
         .pipe(cleanCss({
             compatibility: 'ie10',
-            level: 2
+            level: {
+                2: {
+                    all: true
+                }
+            }
         }))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulpIf(config.isDevelopment, sourcemaps.write(".")))
+        .pipe(gulpIf(config.isDevelopment, sourcemaps.write(".", { includeContent: false, sourceRoot: "/src" })))
         .pipe(gulp.dest(config.path.dist));
 });
 
@@ -165,15 +174,25 @@ gulp.task('js', () => {
     // wait a bit for it
     return gulp.src(paths.build.js, {base: config.path.source})
         .pipe(plumber(config.plumber))
-        .pipe(gulpIf(config.isDevelopment, sourcemaps.init()))
         .pipe(bro({
+            // debug: true,
             transform: [
-                babelify.configure({presets: ['@babel/env']}),
+                babelify.configure({
+                    presets: [
+                        [
+                            '@babel/preset-env',
+                            {
+                                useBuiltIns: 'usage'
+                            }
+                        ]
+                    ]
+                }),
                 ['uglifyify', {global: true}]
             ]
         }))
+        // .pipe(gulpIf(config.isDevelopment, sourcemaps.init({loadMaps: true})))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulpIf(config.isDevelopment, sourcemaps.write(".")))
+        // .pipe(gulpIf(config.isDevelopment, sourcemaps.write(".")))
         .pipe(gulp.dest(config.path.dist));
 });
 
@@ -253,6 +272,12 @@ gulp.task('xml', () => {
 });
 
 
+gulp.task('static_files', () => {
+    return gulp.src(paths.build.static_files, {base: config.path.source})
+        .pipe(gulp.dest(config.path.dist));
+});
+
+
 // Watchers
 gulp.task('watch', () => {
     gulp.watch(paths.watch.css, gulp.series('css'));
@@ -264,6 +289,7 @@ gulp.task('watch', () => {
     gulp.watch(paths.watch.svg, gulp.series('svg-sprite'));
     gulp.watch(paths.watch.json, gulp.series('json'));
     gulp.watch(paths.watch.xml, gulp.series('xml'));
+    gulp.watch(paths.watch.static_files, gulp.series('static_files'));
 });
 
 

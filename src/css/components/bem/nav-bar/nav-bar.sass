@@ -20,9 +20,26 @@
 
   &__switch-language
     margin-left: 193px
+    position: relative
+
+    &__icon
+      position: absolute
+      top: 12px
+      left: 13px
+      width: 16px
+      height: 16px
+      fill: #FFFFFF
+
+    &__dropdown
+      position: absolute
+      top: 17px
+      left: 73px
+      width: 8px
+      height: 8px
+      fill: #FFFFFF
 
   select
-    background: url("../../../../img/test.png") no-repeat #202039
+    background: #202039
     border-radius: 3px
     border: none
     outline: none
@@ -34,13 +51,17 @@
     line-height: normal
     font-size: 14px
     letter-spacing: 0.02em
-    padding: 11px 5px 10px 40px
-
+    padding: 11px 28px 10px 40px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
 
 .adaptive-nav
   width: 620px
-  height: 27px // в макете 17
-  margin-left: 157px // в макете 159
+  height: 27px
+  // в макете 17
+  margin-left: 157px
+  // в макете 159
 
   > ul
     margin: 0
@@ -63,134 +84,3 @@
           font-size: 14px
           letter-spacing: 0.02em
           text-transform: uppercase
-
-
-
-
-
-
-//.dropdown
-//  position: relative
-//  display: inline-block
-//  &:hover
-//    .dropdown-content
-//      display: block
-//
-//.dropbtn
-//  padding: 5px
-//  cursor: pointer
-//  background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center
-//  padding-left: 25px
-//  width: 40px
-//  &::after
-//    background: #FFFFFF url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center
-//    content: ""
-//    height: 16px
-//    position: absolute
-//    right: 0
-//    top: 7px
-//    width: 16px
-//
-//.dropdown-content
-//  display: none
-//  position: absolute
-//  background-color: #f9f9f9
-//  width: 140px
-//  a
-//    color: black
-//    padding: 2px 0 2px 25px
-//    text-decoration: none
-//    display: block
-//    &:last-child
-//      background: url('http://www.miru-mir.info/images/en.gif') no-repeat left center
-//    &:hover
-//      background-color: #f1f1f1
-//    &:first-child
-//      background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center
-
-
-
-//select
-  //  border-radius: 3px
-  //  border: none
-  //  outline: none
-  //  color: #FFFFFF
-  //  text-transform: uppercase
-  //  font-family: Rubik, sans-serif
-  //  font-style: normal
-  //  font-weight: 500
-  //  line-height: normal
-  //  font-size: 14px
-  //  letter-spacing: 0.02em
-  //  padding: 11px 28px 10px 40px
-  //  background: #0c5460
-    //background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee
-    //background: url("../../../../svg/rectangle 2.svg") no-repeat #202039
-
-
-  //.select
-  //  position: relative
-  //  display: inline-block
-  //
-  //.select
-  //  &:after
-  //    content: ""
-  //    padding: 0 8px
-  //    font-size: 2px
-  //    position: absolute
-  //    right: 8px
-  //    top: 44.71%
-  //    z-index: 1
-  //    text-align: center
-  //    width: 5px
-  //    height: 5px
-  //    background: #FFFFFF
-  //    //width: 10%
-  //    //height: 100%
-  //    pointer-events: none
-  //    box-sizing: border-box
-  //    transform: rotate(45deg)
-  //
-  //  &:before
-  //    content: ""
-  //    padding: 0 8px
-  //    font-size: 2px
-  //    position: absolute
-  //    right: 0px
-  //    top: 44.71%
-  //    z-index: 1
-  //    text-align: center
-  //    width: 5px
-  //    height: 5px
-  //    background: #FFFFFF
-  //    //width: 10%
-  //    //height: 100%
-  //    pointer-events: none
-  //    box-sizing: border-box
-  //    transform: rotate(120deg)
-
-  //select
-  //  //padding-right: 25px
-  //  -webkit-appearance: none
-  //  -moz-appearance: none
-  //  background: #202039
-  //
-  //  border-radius: 3px
-  //  border: none
-  //  outline: none
-  //  color: #FFFFFF
-  //  text-transform: uppercase
-  //  font-family: Rubik, sans-serif
-  //  font-style: normal
-  //  font-weight: 500
-  //  line-height: normal
-  //  font-size: 14px
-  //  letter-spacing: 0.02em
-  //  padding: 11px 28px 10px 40px
-
-
-
-
-
-
-
