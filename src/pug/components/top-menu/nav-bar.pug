@@ -1,0 +1,26 @@
+include ../../mixins/svg_sprite
+
+section.nav-bar
+    .container
+        .flex-row
+            a(href="#").nav-bar__logo-link
+                +add_svg({class: "nav-bar__logo", icon: "logo"})
+
+            include ../nav-bar/adaptive-menu
+
+            .nav-bar__switch-language
+                select
+                    option(value="rus") rus
+                    option(value="eng") eng
+            //.dropdown
+            //    .dropbtn RU
+            //    .dropdown-content
+            //        a(href="#") RU
+            //        a(href="#") EN
+
+            //#demoBasic
+
+            //.select#myDropdown
+            //    select#demo-htmlselect
+            //        option(value="rus").language-switch-rus Rus
+            //        option(value="eng").language-switch-eng Eng
