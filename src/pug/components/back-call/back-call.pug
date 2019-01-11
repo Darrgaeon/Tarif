@@ -1,0 +1,32 @@
+include ../../mixins/svg_sprite
+
+section.back-call
+    .container
+        .flex-row
+            .back-call__have-questions
+                h4 Есть вопросы?
+                span Оставьте номер телефона и мы вам перезвоним!
+
+            .back-call__me
+                form(action="#")
+                    .flex-row
+                        .back-call__me__container-input-name
+                            label.form-group
+                                input(type="text"
+                                    placeholder="Имя"
+                                    name="name"
+                                ).input.input-name
+
+                        .back-call__me__container-privacy-policy
+                            span Нажимая на кнопку отправить, вы соглашаетесь с
+                                span.back-call__me__container-privacy-policy__underline  политикой конфиденциальности
+
+                        .back-call__me__container-input-phone
+                            label.form-group
+                                input(type="tel"
+                                placeholder="05 ________"
+                                name="phone"
+                                ).input.input-phone
+
+                        .back-call__me__container-input-send
+                            button.input.button-send Отправить
