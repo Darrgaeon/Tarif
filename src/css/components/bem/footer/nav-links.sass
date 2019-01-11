@@ -1,58 +1,94 @@
 .nav-links
-
-  &__container
   background: #2F2F4B
+  border-bottom: solid 1px #393955
 
   .flex-row
     align-items: center
+    padding-top: 24px
 
   &__logo-link
-    padding: 24px 0
+    //padding: 24px 0
 
   &__logo
     width: 131.25px
     height: 38px
+    fill: #FFFFFF
 
   &__burger
     width: 17px
     height: 14px
     margin-right: 8px
+    fill: #FFFFFF
 
-  //&__social
-  //  margin-left: 130px
-
-  &__facebook-link
+  &__container-facebook
     padding: 7px 12px 7px 13px
     background: #202039
     margin-right: 10px
     border-radius: 5px
-    margin-left: 100px
+    margin-left: auto
 
-  &__facebook
-    width: 11px
-    height: 22px
-
-  &__instagram-link
+  &__container-instagram
     padding: 7px
     background: #202039
     border-radius: 5px
 
-  &__instagram
-    width: 22px
-    height: 22px
+  &__facebook
+      width: 11px
+      height: 22px
 
+  &__instagram
+      width: 22px
+      height: 22px
+
+
+  &__switch-language
+    margin-left: 193px
+    position: relative
+
+    &__icon
+      position: absolute
+      top: 12px
+      left: 13px
+      width: 16px
+      height: 16px
+      fill: #FFFFFF
+
+    &__dropdown
+      position: absolute
+      top: 17px
+      left: 73px
+      width: 8px
+      height: 8px
+      fill: #FFFFFF
+
+  select
+    background: #202039
+    border-radius: 3px
+    border: none
+    outline: none
+    color: #FFFFFF
+    text-transform: uppercase
+    font-family: Rubik, sans-serif
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    font-size: 14px
+    letter-spacing: 0.02em
+    padding: 11px 28px 10px 40px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
 
 .adaptive-nav
   width: 620px
-  height: 27px // в макете 17
-  margin-left: auto // в макете 159
+  height: 27px
+  margin-left: 157px
 
   > ul
     margin: 0
     padding: 0
     display: flex
     justify-content: space-between
-    list-style: none
 
     > li
       padding: 0
@@ -69,8 +105,3 @@
           font-size: 14px
           letter-spacing: 0.02em
           text-transform: uppercase
-
-
-
-
-

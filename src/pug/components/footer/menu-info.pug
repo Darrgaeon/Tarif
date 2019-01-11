@@ -1,0 +1,16 @@
+include ../../mixins/svg_sprite
+
+section.nav-links-info
+    .container
+        .flex-row
+            span.nav-links-info__tarif-2018 © Tarif, 2018
+            a(href="#").nav-links-info__privacy_policy
+                span Политика конфиденциальности
+            a(href="#").nav-links-info__usage__information
+                span Информация об использовании
+            .nav-links-info__ruso
+                a(href="#")
+                    span Дизайн и разработка сайта —
+                    +add_svg({class: "nav-links-info__icon-ruso", icon: "ruso"})
+
+
