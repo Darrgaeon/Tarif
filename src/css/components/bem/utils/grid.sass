@@ -1,6 +1,9 @@
 .container
-    max-width: 1200px
+    $container-width: 1200px
+    $paddings: 15px
+
+    max-width: ($container-width + $paddings * 2)
     width: 100%
     box-sizing: border-box
     margin: 0 auto
-    padding: 0
+    padding: 0 $paddings

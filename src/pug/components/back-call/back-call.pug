@@ -7,32 +7,38 @@ section.back-call
                 h4 Есть вопросы?
                 span Оставьте номер телефона и мы вам перезвоним!
 
-            +add_svg({class: "back-call__pattern-1", icon: "pattern-1"})
+            //+add_svg({class: "back-call__pattern-1", icon: "pattern-1"})
 
             .back-call__me
                 form(action="#")
                     .flex-row
                         .back-call__me__container-input-name
-                            label.form-group
+                            label
                                 input(type="text"
                                     placeholder="Имя"
                                     name="name"
-                                ).input.input-name
+                                ).input
 
                         .back-call__me__container-privacy-policy
                             span Нажимая на кнопку отправить, вы соглашаетесь с
                                 span.back-call__me__container-privacy-policy__underline  политикой конфиденциальности
 
                         .back-call__me__container-input-phone
-                            label.form-group
+                            label
                                 input(type="tel"
-                                placeholder="05 ________"
+                                placeholder="05 _____"
                                 name="phone"
-                                ).input.input-phone
+                                ).input
 
                         .back-call__me__container-input-send
-                            button.input.button-send Отправить
+                            button.button-send Отправить
 
-            +add_svg({class: "back-call__pattern-2", icon: "pattern-2"})
-            +add_svg({class: "back-call__ellipse", icon: "ellipse"})
-            +add_svg({class: "back-call__mobile", icon: "mobile"})
+            .back-call__container-img
+                +add_svg({class: "back-call__pattern-2", icon: "pattern-1"})
+                +add_svg({class: "back-call__pattern-2", icon: "pattern-2"})
+                //+add_svg({class: "back-call__ellipse", icon: "ellipse"})
+                img(src="img/mobile.png", alt="mobile").back-call__mobile
+
+            //+add_svg({class: "back-call__pattern-2", icon: "pattern-2"})
+            //+add_svg({class: "back-call__ellipse", icon: "ellipse"})
+            //+add_svg({class: "back-call__mobile", icon: "mobile"})
