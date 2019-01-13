@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <section class="content">
+    <section class="header">
       <section class="nav-bar">
         <div class="container">
           <div class="flex-row"><a href="#">
@@ -36,11 +36,12 @@
                       <use xlink:href="svg/sprite.svg#svg--logo"></use>
                     </svg></a>
             <nav class="adaptive-nav">
+              <button class="navbar-toggler">
+                      <svg class="adaptive-nav__burger">
+                        <use xlink:href="svg/sprite.svg#svg--burger"></use>
+                      </svg><span>Меню</span>
+              </button>
               <ul>
-                <li><a href="#">
-                          <svg class="adaptive-nav__burger">
-                            <use xlink:href="svg/sprite.svg#svg--burger"></use>
-                          </svg><span>Меню</span></a></li>
                 <li><a href="#"><span>Сотовая связь</span></a></li>
                 <li><a href="#"><span>Интернет</span></a></li>
                 <li><a href="#"><span>Телевидение</span></a></li>
@@ -62,6 +63,8 @@
           </div>
         </div>
       </section>
+    </section>
+    <section class="content">
       <section class="error-404">
         <div class="container">
           <div class="error-404-container">
@@ -74,13 +77,14 @@
           </div>
         </div>
       </section>
+    </section>
+    <section class="footer">
       <section class="back-call">
         <div class="container">
           <div class="flex-row">
             <div class="back-call__have-questions">
-              <h4>Есть вопросы?</h4><span>Оставьте номер телефона и мы вам перезвоним!</span>
+              <h4 class="title">Есть вопросы?</h4><span>Оставьте номер телефона и мы вам перезвоним!</span>
             </div>
-            <!--+add_svg({class: "back-call__pattern-1", icon: "pattern-1"})-->
             <div class="back-call__me">
               <form action="#">
                 <div class="flex-row">
@@ -89,7 +93,7 @@
                       <input class="input" type="text" placeholder="Имя" name="name">
                     </label>
                   </div>
-                  <div class="back-call__me__container-privacy-policy"><span>Нажимая на кнопку отправить, вы соглашаетесь с<span class="back-call__me__container-privacy-policy__underline"> политикой конфиденциальности</span></span></div>
+                  <div class="back-call__me__container-privacy-policy"><span>Нажимая на кнопку отправить, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span></div>
                   <div class="back-call__me__container-input-phone">
                     <label>
                       <input class="input" type="tel" placeholder="05 _____" name="phone">
@@ -102,32 +106,69 @@
               </form>
             </div>
             <div class="back-call__container-img">
-                    <svg class="back-call__pattern-2">
+                    <svg class="back-call__container-img__pattern-1">
                       <use xlink:href="svg/sprite.svg#svg--pattern-1"></use>
                     </svg>
-                    <svg class="back-call__pattern-2">
+                    <svg class="back-call__container-img__pattern-2">
                       <use xlink:href="svg/sprite.svg#svg--pattern-2"></use>
                     </svg>
-              <!--+add_svg({class: "back-call__ellipse", icon: "ellipse"})--><img class="back-call__mobile" src="img/mobile.png" alt="mobile">
+              <!--.back-call__container-img__ellipse--><img class="back-call__container-img__mobile" src="img/mobile.png" alt="mobile">
             </div>
-            <!--+add_svg({class: "back-call__pattern-2", icon: "pattern-2"})-->
-            <!--+add_svg({class: "back-call__ellipse", icon: "ellipse"})-->
-            <!--+add_svg({class: "back-call__mobile", icon: "mobile"})-->
+            <!--.back-call__container-img-ellipse
+            //.img-ellipse
+            
+            -->
           </div>
         </div>
       </section>
+      <!--section.back-call-->
+      <!--    .container-->
+      <!--        .flex-row-->
+      <!--            .back-call__have-questions-->
+      <!--                h4.title Есть вопросы?-->
+      <!--                span Оставьте номер телефона и мы вам перезвоним!-->
+      <!---->
+      <!--            .back-call__me-->
+      <!--                form(action="#")-->
+      <!--                    .flex-row-->
+      <!--                        .back-call__me__container-input-name-->
+      <!--                            label-->
+      <!--                                input(type="text"-->
+      <!--                                    placeholder="Имя"-->
+      <!--                                    name="name"-->
+      <!--                                ).input-->
+      <!---->
+      <!--                        .back-call__me__container-privacy-policy-->
+      <!--                            span Нажимая на кнопку отправить, вы соглашаетесь с #[a(href="#") политикой конфиденциальности]-->
+      <!---->
+      <!--                        .back-call__me__container-input-phone-->
+      <!--                            label-->
+      <!--                                input(type="tel"-->
+      <!--                                placeholder="05 _____"-->
+      <!--                                name="phone"-->
+      <!--                                ).input-->
+      <!---->
+      <!--                        .back-call__me__container-input-send-->
+      <!--                            button.button-send Отправить-->
+      <!---->
+      <!--            .back-call__container-img-->
+      <!--                +add_svg({class: "back-call__container-img__pattern-1", icon: "pattern-1"})-->
+      <!--                +add_svg({class: "back-call__container-img__pattern-2", icon: "pattern-2"})-->
+      <!--                .back-call__container-img__ellipse-->
+      <!--                img(src="img/mobile.png", alt="mobile").back-call__container-img__mobile-->
       <section class="nav-links">
         <div class="container">
-          <div class="flex-row"><a class="nav-links__logo-link" href="#">
+          <div class="flex-row"><a href="#">
                     <svg class="nav-links__logo">
                       <use xlink:href="svg/sprite.svg#svg--logo"></use>
                     </svg></a>
             <nav class="adaptive-nav">
+              <button class="navbar-toggler">
+                      <svg class="adaptive-nav__burger">
+                        <use xlink:href="svg/sprite.svg#svg--burger"></use>
+                      </svg><span>Меню</span>
+              </button>
               <ul>
-                <li><a href="#">
-                          <svg class="adaptive-nav__burger">
-                            <use xlink:href="svg/sprite.svg#svg--burger"></use>
-                          </svg><span>Меню</span></a></li>
                 <li><a href="#"><span>Сотовая связь</span></a></li>
                 <li><a href="#"><span>Интернет</span></a></li>
                 <li><a href="#"><span>Телевидение</span></a></li>
@@ -145,16 +186,20 @@
       </section>
       <section class="nav-links-info">
         <div class="container">
-          <div class="flex-row"><span class="nav-links-info__tarif-2018">© Tarif, 2018</span><a class="nav-links-info__privacy_policy" href="#"><span>Политика конфиденциальности</span></a><a class="nav-links-info__usage__information" href="#"><span>Информация об использовании</span></a>
-            <div class="nav-links-info__ruso"><a href="#"><span>Дизайн и разработка сайта —</span>
-                      <svg class="nav-links-info__icon-ruso">
+          <div class="flex-row footer-credits">
+            <div class="footer-credits__copyright">© Tarif, 2018</div>
+            <ul class="footer-credits-links">
+              <li class="footer-credits-links-link"><a href="#">Политика конфиденциальности</a></li>
+              <li class="footer-credits-links-link"><a href="#">Информация об использовании</a></li>
+            </ul>
+            <div class="rusodot-credits"><a href="#" target="_blank"><span>Дизайн и разработка сайта —</span>
+                      <svg class="rusodot-credits__icon">
                         <use xlink:href="svg/sprite.svg#svg--ruso"></use>
                       </svg></a></div>
           </div>
         </div>
       </section>
     </section>
-    <section class="credits"></section>
     <script src="js/main.min.js" async></script>
     <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->

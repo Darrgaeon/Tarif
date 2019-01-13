@@ -1,0 +1,65 @@
+@import "../../vars"
+@import "../../functions"
+
+.footer-credits
+  color: #FFFFFF
+  line-height: normal
+  font-size: 14px
+
+  display: flex
+  align-items: center
+
+  a
+    color: #A1A1B1
+    padding: 3px
+
+    transition: color $transition-duration
+
+    &:hover
+      color: #FFFFFF
+
+  &__copyright
+    line-height: (18/14)
+
+  & &__copyright
+    margin-right: 55px
+
+  &-links
+    padding: 0
+    margin: 0
+    list-style: none
+
+    display: flex
+    flex-wrap: wrap
+
+    & &-link
+      margin: 0 ((32px - 3px * 2)/2)
+
+    // &-link   => .footer-credits-links-link
+    // & &-link => .footer-credits-links .footer-credits-links-link
+
+    &-link
+      & > a
+        display: block
+        width: 100%
+        padding: 3px
+
+  .rusodot-credits
+    margin-left: auto
+
+
+.rusodot
+  &-credits
+    font-size: 13px
+
+    & > a
+      display: flex
+      align-items: center
+
+    &__icon
+      width: 30px
+      height: 30px
+      fill: #FFFFFF
+
+    & &__icon
+      margin-left: 4px

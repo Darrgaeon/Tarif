@@ -12,10 +12,16 @@ html(lang="RU")
 
 
     body
+        section.header
+            include components/top-menu/nav-bar
+
         section.content
             block content
 
-        section.credits
+        section.footer
+            include components/back-call/back-call
+            include components/footer/bottom-menu
+            include components/footer/menu-info
 
         include ./scripts
         block custom_scripts

@@ -4,10 +4,9 @@ section.back-call
     .container
         .flex-row
             .back-call__have-questions
-                h4 Есть вопросы?
+                h4.title Есть вопросы?
                 span Оставьте номер телефона и мы вам перезвоним!
 
-            //+add_svg({class: "back-call__pattern-1", icon: "pattern-1"})
 
             .back-call__me
                 form(action="#")
@@ -15,13 +14,12 @@ section.back-call
                         .back-call__me__container-input-name
                             label
                                 input(type="text"
-                                    placeholder="Имя"
-                                    name="name"
+                                placeholder="Имя"
+                                name="name"
                                 ).input
 
                         .back-call__me__container-privacy-policy
-                            span Нажимая на кнопку отправить, вы соглашаетесь с
-                                span.back-call__me__container-privacy-policy__underline  политикой конфиденциальности
+                            span Нажимая на кнопку отправить, вы соглашаетесь с #[a(href="#") политикой конфиденциальности]
 
                         .back-call__me__container-input-phone
                             label
@@ -34,11 +32,46 @@ section.back-call
                             button.button-send Отправить
 
             .back-call__container-img
-                +add_svg({class: "back-call__pattern-2", icon: "pattern-1"})
-                +add_svg({class: "back-call__pattern-2", icon: "pattern-2"})
-                //+add_svg({class: "back-call__ellipse", icon: "ellipse"})
-                img(src="img/mobile.png", alt="mobile").back-call__mobile
+                +add_svg({class: "back-call__container-img__pattern-1", icon: "pattern-1"})
+                +add_svg({class: "back-call__container-img__pattern-2", icon: "pattern-2"})
+                //.back-call__container-img__ellipse
+                img(src="img/mobile.png", alt="mobile").back-call__container-img__mobile
 
-            //+add_svg({class: "back-call__pattern-2", icon: "pattern-2"})
-            //+add_svg({class: "back-call__ellipse", icon: "ellipse"})
-            //+add_svg({class: "back-call__mobile", icon: "mobile"})
+            //.back-call__container-img-ellipse
+                //.img-ellipse
+
+//section.back-call
+//    .container
+//        .flex-row
+//            .back-call__have-questions
+//                h4.title Есть вопросы?
+//                span Оставьте номер телефона и мы вам перезвоним!
+//
+//            .back-call__me
+//                form(action="#")
+//                    .flex-row
+//                        .back-call__me__container-input-name
+//                            label
+//                                input(type="text"
+//                                    placeholder="Имя"
+//                                    name="name"
+//                                ).input
+//
+//                        .back-call__me__container-privacy-policy
+//                            span Нажимая на кнопку отправить, вы соглашаетесь с #[a(href="#") политикой конфиденциальности]
+//
+//                        .back-call__me__container-input-phone
+//                            label
+//                                input(type="tel"
+//                                placeholder="05 _____"
+//                                name="phone"
+//                                ).input
+//
+//                        .back-call__me__container-input-send
+//                            button.button-send Отправить
+//
+//            .back-call__container-img
+//                +add_svg({class: "back-call__container-img__pattern-1", icon: "pattern-1"})
+//                +add_svg({class: "back-call__container-img__pattern-2", icon: "pattern-2"})
+//                .back-call__container-img__ellipse
+//                img(src="img/mobile.png", alt="mobile").back-call__container-img__mobile

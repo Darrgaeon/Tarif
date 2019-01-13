@@ -1,7 +1,8 @@
-.nav-bar
+@import "../../vars"
+@import "../../functions"
 
-  &__container
-  background: #2F2F4B
+.nav-bar
+  background: $color-menu
 
   .flex-row
     align-items: center
@@ -11,16 +12,11 @@
     width: 131.25px
     height: 38px
     fill: #FFFFFF
-
-  //&__burger
-  //  width: 17px
-  //  height: 14px
-  //  margin-right: 8px
-  //  fill: #FFFFFF
+    margin-right: 145px
 
   &__switch-language
-    margin-left: 191px
     position: relative
+    margin-left: auto
 
     &__icon
       position: absolute
@@ -28,25 +24,23 @@
       left: 13px
       width: 16px
       height: 16px
-      fill: #FFFFFF
+      fill: $color-white
 
     &__dropdown
       position: absolute
-      top: 17px
-      left: 73px
+      top: 16px
+      left: 72px
       width: 8px
       height: 8px
-      fill: #FFFFFF
+      fill: $color-white
 
   select
     background: #202039
     border-radius: 3px
     border: none
     outline: none
-    color: #FFFFFF
+    color: $color-white
     text-transform: uppercase
-    font-family: Rubik, sans-serif
-    font-style: normal
     font-weight: 500
     line-height: normal
     font-size: 14px
@@ -54,30 +48,3 @@
     padding: 11px 28px 10px 40px
     -webkit-appearance: none
     -moz-appearance: none
-
-//.adaptive-nav
-//  width: 620px
-//  height: 27px
-//  margin-left: auto
-//
-//  > ul
-//    margin: 0
-//    padding: 0
-//    display: flex
-//    justify-content: space-between
-//
-//    > li
-//      padding: 0
-//      margin: 0
-//
-//      > a
-//        color: #FFFFFF
-//
-//        > span
-//          font-family: Rubik, sans-serif
-//          font-weight: 500
-//          font-style: normal
-//          line-height: normal
-//          font-size: 14px
-//          letter-spacing: 0.02em
-//          text-transform: uppercase

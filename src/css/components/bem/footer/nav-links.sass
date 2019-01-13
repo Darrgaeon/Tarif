@@ -1,25 +1,17 @@
+@import "../../vars"
+@import "../../functions"
+
 .nav-links
-  background: #2F2F4B
+  background: $color-menu
   border-bottom: solid 1px #393955
+  padding: 24px 0
 
-  .flex-row
-    align-items: center
-    padding-top: 26px
-    padding-bottom: 24px
-
-  &__logo-link
-    //padding: 24px 0
 
   &__logo
     width: 131.25px
     height: 38px
-    fill: #FFFFFF
-
-  &__burger
-    width: 17px
-    height: 14px
-    margin-right: 8px
-    fill: #FFFFFF
+    fill: $color-white
+    margin-right: 145px
 
   &__container-facebook
     padding: 7px 12px 7px 13px
@@ -40,45 +32,3 @@
   &__instagram
       width: 22px
       height: 22px
-
-
-  &__switch-language
-    margin-left: 193px
-    position: relative
-
-    &__icon
-      position: absolute
-      top: 12px
-      left: 13px
-      width: 16px
-      height: 16px
-      fill: #FFFFFF
-
-    &__dropdown
-      position: absolute
-      top: 17px
-      left: 73px
-      width: 8px
-      height: 8px
-      fill: #FFFFFF
-
-  select
-    background: #202039
-    border-radius: 3px
-    border: none
-    outline: none
-    color: #FFFFFF
-    text-transform: uppercase
-    font-family: Rubik, sans-serif
-    font-style: normal
-    font-weight: 500
-    line-height: normal
-    font-size: 14px
-    letter-spacing: 0.02em
-    padding: 11px 28px 10px 40px
-    -webkit-appearance: none
-    -moz-appearance: none
-    appearance: none
-
-//.adaptive-nav
-//  margin-left: 158px
