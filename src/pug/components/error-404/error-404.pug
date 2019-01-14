@@ -2,8 +2,12 @@ include ../../mixins/svg_sprite
 
 section.error-404
     .container
-        .error-404-container
-            +add_svg({class: "error-404__icon-magnifier", icon: "magnifier"})
-            h4.title Ошибка 404
-            p Запрашиваемая страница не существует
-            button Вернуться на главную
+        .flex-row
+            .error-404-container
+                .error-404-container-img__error
+                    img(src="img/error.png", alt="error")
+                .title Ошибка 404
+                .text Запрашиваемая страница не существует
+                .button-redirect-to-main-page
+                    button Вернуться на главную
+
