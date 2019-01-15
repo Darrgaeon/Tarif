@@ -4,31 +4,36 @@
 .nav-links
   background: $color-menu
   border-bottom: solid 1px #393955
-  padding: 24px 0
 
+  &-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
 
-  &__logo
-    width: 131.25px
-    height: 38px
-    fill: $color-white
-    margin-right: 145px
-
-  &__container-facebook
+  .container-facebook
     padding: 7px 12px 7px 13px
     background: #202039
     margin-right: 10px
     border-radius: 5px
     margin-left: auto
 
-  &__container-instagram
+  .container-instagram
     padding: 7px
     background: #202039
     border-radius: 5px
+
+  &__logo
+    width: 132px
+    height: 38px
+    fill: $color-white
+    margin-right: 140px
 
   &__facebook
       width: 11px
       height: 22px
 
   &__instagram
-      width: 22px
-      height: 22px
+    width: 22px
+    height: 22px

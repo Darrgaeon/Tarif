@@ -2,14 +2,14 @@ include ../../mixins/svg_sprite
 
 section.nav-links
     .container
-        .flex-row
+        .nav-links-container
             a(href="#")
                 +add_svg({class: "nav-links__logo", icon: "logo"})
 
             include ../nav-bar/adaptive-menu
 
-            a(href="#").nav-links__container-facebook
+            a(href="#").container-facebook
                 +add_svg({class: "nav-links__facebook", icon: "facebook"})
-            a(href="#").nav-links__container-instagram
+            a(href="#").container-instagram
                 +add_svg({class: "nav-links__instagram", icon: "instagram"})
 
