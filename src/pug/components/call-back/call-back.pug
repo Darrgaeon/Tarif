@@ -1,0 +1,39 @@
+include ../../mixins/svg_sprite
+
+section.call-back
+    .container
+        .flex-row
+            .call-back__have-questions
+                h2 Есть вопросы?
+                span Оставьте номер телефона и мы вам перезвоним!
+
+            .call-back__me
+                form(action="#")
+                    .flex-row
+                        .container-input-name
+                            label
+                                input(type="text"
+                                placeholder="Имя"
+                                name="name"
+                                ).input
+
+                        .privacy-policy
+                            span Нажимая на кнопку отправить, вы соглашаетесь с #[a(href="#") политикой конфиденциальности]
+
+                        .container-input-phone
+                            label
+                                input(type="tel"
+                                placeholder="05 ________"
+                                name="phone"
+                                ).input
+
+                        .container-button
+                            button.button-send Отправить
+
+            .container-images
+                +add_svg({class: "container-images__pattern-1", icon: "pattern-1"})
+                +add_svg({class: "container-images__pattern-2", icon: "pattern-2"})
+                img(src="img/mobile.png", alt="mobile").container-images__mobile
+
+            .container-img-ellipse
+                .img-ellipse
