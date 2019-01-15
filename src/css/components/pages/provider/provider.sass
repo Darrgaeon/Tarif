@@ -1,0 +1,99 @@
+@import "../../vars"
+@import "../../functions"
+
+.provider
+
+  &__dropdown_right-1
+    position: absolute
+    top: 4px
+    left: 56px
+    width: 7px
+    height: 7px
+    fill: $color-menu
+
+  &__dropdown_right-2
+    position: absolute
+    top: 4px
+    left: 166px
+    width: 7px
+    height: 7px
+    fill: $color-menu
+
+  &__container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+    &__title-and-block-links
+      display: flex
+      width: 100%
+      justify-content: space-between
+      margin-bottom: 23px
+
+      .title-provider
+        letter-spacing: -0.18px
+        margin-top: 2px
+        margin-left: -1px
+      //margin-bottom: 20px
+
+      .links
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin-left: auto
+        ul
+          padding: 0
+          margin: 0
+          position: relative
+          li
+            padding: 0
+            margin: 0 10px
+            list-style: none
+            display: inline-block
+            a
+              font-family: Ubuntu, sans-serif
+              font-weight: normal
+              line-height: normal
+              font-size: 13px
+              color: $color-menu
+
+          li:first-child
+            margin-left: 0
+
+          li:nth-child(3)
+            margin-right: 0
+
+    &__about-provider
+      width: 100%
+      display: flex
+      flex-direction: row
+      padding: 26px 54px 0 30px
+      margin-bottom: 66px
+
+      .container-title-and-text
+        width: 904px
+        .title
+          font-size: 25px
+          line-height: normal
+          font-weight: bold
+          margin-bottom: 13px
+
+        .text
+          line-height: (25/16)
+          margin-bottom: 7px
+
+        .link-more
+          font-size: 16px
+          line-height: (25/16)
+          color: #9242F8
+
+        .link-more:hover
+          color: lighten(#9242F8, 10%)
+
+      .img-wrapper
+        margin-top: 23px
+        margin-left: auto
+        img
+          width: 178px
+          height: 63px
+

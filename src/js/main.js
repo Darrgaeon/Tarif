@@ -1,7 +1,6 @@
 // prevent babel from losing this
 // this should be window object
 function init() {
-    console.log(2);
     this.$ = require("jquery/dist/jquery");
     this.jQuery = this.$;
 

@@ -1,6 +1,4 @@
 module.exports = function () {
-    console.log(1);
-    console.log($);
 
 
 // //Dropdown plugin data

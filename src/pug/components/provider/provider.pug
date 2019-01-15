@@ -1,0 +1,35 @@
+section.provider
+    .container
+        .provider__container
+            .provider__container__title-and-block-links
+                h1.title-provider MTS
+                .links
+                    ul
+                        li
+                            a(href="#") Главная
+                            +add_svg({class: "provider__dropdown_right-1", icon: "dropdown_right"})
+                        li
+                            a(href="#") Сотовая связь
+                            +add_svg({class: "provider__dropdown_right-2", icon: "dropdown_right"})
+                        li
+                            a(href="#") MTS
+            .provider__container__about-provider
+                .container-title-and-text
+                    h4.title О провайдере
+                    p.text Повседневная практика показывает, что перспективное планирование играет важную роль в
+                        |  формировании нестандартных решений. Необходимо отметить, что реализация намеченных плановых
+                        | заданий играет определяющее значение для новых предложений. Повседневная практика показывает,
+                        | что перспективное планирование играет важную роль в формировании нестандартных…
+                    a(href="#").link-more Подробнее
+                .img-wrapper
+                    img(src="img/logo-mts.png", alt="logo-mts")
+
+            include ../provider/services
+
+
+
+
+
+
+
+
