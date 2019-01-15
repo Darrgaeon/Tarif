@@ -1,13 +1,13 @@
 include ../../mixins/svg_sprite
 
-section.error-404
+.error-404
     .container
-        .flex-row
+        .flex-row.justify-content-center
             .error-404-container
-                .error-404-container-img__error
+                .img-container
                     img(src="img/error.png", alt="error")
-                .title Ошибка 404
-                .text Запрашиваемая страница не существует
-                .button-redirect-to-main-page
+                h2 Ошибка 404
+                p Запрашиваемая страница не существует
+                .button-container
                     button Вернуться на главную
 

@@ -1,11 +1,7 @@
 @import "../../vars"
 @import "../../functions"
 
-
 .error-404
-
-  .flex-row
-    justify-content: center
 
   &-container
     display: flex
@@ -16,7 +12,7 @@
     background: $color-white
     padding: 60px 0
 
-    &-img__error
+    .img-container
       width: 100%
       text-align: center
       margin-bottom: 31px
@@ -24,37 +20,37 @@
       img
         width: 160px
         height: 129px
+        object-fit: cover
 
-    .title
-      font-weight: bold
+    h2
       line-height: (38/27)
-      font-size: 27px
       color: #212B4A
       text-align: center
-      margin-bottom: 7px
+      margin-bottom: 6px
 
-    .text
-      font-weight: normal
-      font-style: normal
+    p
       line-height: (26/18)
       font-size: 18px
       color: #212B4A
       text-align: center
-      margin-bottom: 52px
+      margin-bottom: 53px
 
 
-    .button-redirect-to-main-page
+    .button-container
       text-align: center
+      text-shadow: 0 0 20px rgba(40, 48, 79, 0.03)
       button
-        padding: 20px 33px 18px 29px
+        padding: 19px 30px 18px 31px
         font-weight: 500
         line-height: normal
-        font-size: 14px
         border-width: 0
         letter-spacing: 0.02em
         text-transform: uppercase
         color: $color-white
         background: #0EB780
         border-radius: 6px
-        text-shadow: 0 0 20px rgba(40, 48, 79, 0.03)
+        outline: none
+
+        &:hover
+          background: lighten(#0EB780, 10%)
 
