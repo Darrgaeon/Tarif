@@ -65,58 +65,223 @@
       </section>
     </section>
     <section class="content">
-      <section class="provider">
-        <div class="container">
-          <div class="provider__container">
-            <div class="provider__container__title-and-block-links">
-              <h1 class="title-provider">MTS</h1>
-              <div class="links">
-                <ul>
-                  <li><a href="#">Главная</a>
-                          <svg class="provider__dropdown_right-1">
-                            <use xlink:href="svg/sprite.svg#svg--dropdown_right"></use>
-                          </svg>
-                  </li>
-                  <li><a href="#">Сотовая связь</a>
-                          <svg class="provider__dropdown_right-2">
-                            <use xlink:href="svg/sprite.svg#svg--dropdown_right"></use>
-                          </svg>
-                  </li>
-                  <li><a href="#">MTS</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="provider__container__about-provider">
-              <div class="container-title-and-text">
-                <h4 class="title">О провайдере</h4>
-                <p class="text">
+      <!--include ../../../pug/mixins/provider-service-->
+      <div class="container">
+        <div class="content-card">
+          <div class="content-heading">
+            <h1>MTS</h1>
+            <ul>
+              <li><a href="#">Главная</a>
+                      <svg class="dropdown_right-1">
+                        <use xlink:href="svg/sprite.svg#svg--dropdown_right"></use>
+                      </svg>
+              </li>
+              <li><a href="#">Сотовая связь</a>
+                      <svg class="dropdown_right-2">
+                        <use xlink:href="svg/sprite.svg#svg--dropdown_right"></use>
+                      </svg>
+              </li>
+              <li><a href="#">MTS</a></li>
+            </ul>
+          </div>
+          <div class="content-description">
+            <div class="content-description-provider">
+              <div class="container-info">
+                <h3>О провайдере</h3>
+                <p>
                   Повседневная практика показывает, что перспективное планирование играет важную роль в формировании нестандартных решений. Необходимо отметить, что реализация намеченных плановых
                   заданий играет определяющее значение для новых предложений. Повседневная практика показывает,
                   что перспективное планирование играет важную роль в формировании нестандартных…
-                </p><a class="link-more" href="#">Подробнее</a>
-              </div>
-              <div class="img-wrapper"><img src="img/logo-mts.png" alt="logo-mts"></div>
+                </p><a href="#">Подробнее</a>
+              </div><img src="img/logo-mts.png" alt="logo-mts">
             </div>
-            <div class="provider__container__services">
-              <h2 class="provider__container__services__title">Сотовая связь</h2>
-              <div class="provider__container__services__info-service">
+          </div>
+          <div class="content-description-services">
+            <div class="content-service">
+              <!-- 1 block-->
+              <h2 class="background-red">Сотовая связь</h2>
+              <div class="content-info-service">
                 <div class="container-button">
                   <button>Отправить заявку</button>
                 </div>
                 <div class="container-cost">
-                  <h4 class="title">300 рублей</h4>
-                  <p class="text">Цена в месяц, стоимость им-карты 50 рублей</p>
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
                 </div>
-                <div class="container-name-service">
-                  <h4 class="title">Безлимитище Plus</h4>
-                  <p class="text">
-                    Неограниченные звонки и текстовые сообщения, 100 гб интернет,100 минут международных минут</p>
+                <div class="container-description-tarif">
+                  <h4>Безлимитище Plus</h4>
+                  <p>Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут</p>
+                </div>
+              </div>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Мобильный интернет 2.0</h4>
+                  <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
+                </div>
+              </div>
+              <!-- 2 block-->
+              <h2 class="background-orange">Интернет</h2>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Безлимитище Plus</h4>
+                  <p>Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут</p>
+                </div>
+              </div>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Мобильный интернет 2.0</h4>
+                  <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
+                </div>
+              </div>
+              <!-- 3 block-->
+              <h2 class="background-purple">Телевидение</h2>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Безлимитище Plus</h4>
+                  <p>Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут</p>
+                </div>
+              </div>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Мобильный интернет 2.0</h4>
+                  <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
+                </div>
+              </div>
+              <!-- 4 block-->
+              <h2 class="background-yellow">Пакеты 3 в 1</h2>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Безлимитище Plus</h4>
+                  <p>Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут</p>
+                </div>
+              </div>
+              <div class="content-info-service">
+                <div class="container-button">
+                  <button>Отправить заявку</button>
+                </div>
+                <div class="container-cost">
+                  <h4>300 рублей</h4>
+                  <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
+                </div>
+                <div class="container-description-tarif">
+                  <h4>Мобильный интернет 2.0</h4>
+                  <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
                 </div>
               </div>
             </div>
           </div>
+          <!-- 2 block-->
+          <!--.content-description-services-->
+          <!--    h2.background-orange Интернет-->
+          <!--    .content-info-service-->
+          <!--        .container-button-->
+          <!--            button Отправить заявку-->
+          <!--        .container-cost-->
+          <!--            h4 300 рублей-->
+          <!--            p Цена в месяц, стоимость cим-карты 50 рублей-->
+          <!--        .container-description-tarif-->
+          <!--            h4 Безлимитище Plus-->
+          <!--            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут-->
+          <!---->
+          <!--    .content-info-service-->
+          <!--        .container-button-->
+          <!--            button Отправить заявку-->
+          <!--        .container-cost-->
+          <!--            h4 300 рублей-->
+          <!--            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно-->
+          <!--        .container-description-tarif-->
+          <!--            h4 Мобильный интернет 2.0-->
+          <!--            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон-->
+          <!---->
+          <!--// 3 block-->
+          <!--.content-description-services-->
+          <!--    h2.background-purple Телевидение-->
+          <!--    .content-info-service-->
+          <!--        .container-button-->
+          <!--            button Отправить заявку-->
+          <!--        .container-cost-->
+          <!--            h4 300 рублей-->
+          <!--            p Цена в месяц, стоимость cим-карты 50 рублей-->
+          <!--        .container-description-tarif-->
+          <!--            h4 Безлимитище Plus-->
+          <!--            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут-->
+          <!---->
+          <!--    .content-info-service-->
+          <!--        .container-button-->
+          <!--            button Отправить заявку-->
+          <!--        .container-cost-->
+          <!--            h4 300 рублей-->
+          <!--            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно-->
+          <!--        .container-description-tarif-->
+          <!--            h4 Мобильный интернет 2.0-->
+          <!--            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон-->
+          <!---->
+          <!--// 4 block-->
+          <!--.content-description-services-->
+          <!--    h2.background-yellow Пакеты 3 в 1-->
+          <!--    .content-info-service-->
+          <!--        .container-button-->
+          <!--            button Отправить заявку-->
+          <!--        .container-cost-->
+          <!--            h4 300 рублей-->
+          <!--            p Цена в месяц, стоимость cим-карты 50 рублей-->
+          <!--        .container-description-tarif-->
+          <!--            h4 Безлимитище Plus-->
+          <!--            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут-->
+          <!---->
+          <!--    .content-info-service-->
+          <!--        .container-button-->
+          <!--            button Отправить заявку-->
+          <!--        .container-cost-->
+          <!--            h4 300 рублей-->
+          <!--            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно-->
+          <!--        .container-description-tarif-->
+          <!--            h4 Мобильный интернет 2.0-->
+          <!--            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон-->
         </div>
-      </section>
+      </div>
     </section>
     <section class="footer">
       <section class="call-back">

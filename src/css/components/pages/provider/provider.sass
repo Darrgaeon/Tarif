@@ -1,99 +1,121 @@
 @import "../../vars"
 @import "../../functions"
 
-.provider
 
-  &__dropdown_right-1
-    position: absolute
-    top: 4px
-    left: 56px
-    width: 7px
-    height: 7px
-    fill: $color-menu
+.content-card
+  .content-heading
+    .dropdown_right-1
+      position: absolute
+      top: 19px
+      left: 57px
+      width: 7px
+      height: 7px
+      fill: $color-menu
 
-  &__dropdown_right-2
-    position: absolute
-    top: 4px
-    left: 166px
-    width: 7px
-    height: 7px
-    fill: $color-menu
+    .dropdown_right-2
+      position: absolute
+      top: 19px
+      left: 167px
+      width: 7px
+      height: 7px
+      fill: $color-menu
 
-  &__container
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-
-    &__title-and-block-links
+  .content-description
+    .content-description-provider
+      padding-bottom: 20px
       display: flex
-      width: 100%
-      justify-content: space-between
-      margin-bottom: 23px
-
-      .title-provider
-        letter-spacing: -0.18px
-        margin-top: 2px
-        margin-left: -1px
-      //margin-bottom: 20px
-
-      .links
-        display: flex
-        align-items: center
-        flex-wrap: wrap
-        margin-left: auto
-        ul
-          padding: 0
-          margin: 0
-          position: relative
-          li
-            padding: 0
-            margin: 0 10px
-            list-style: none
-            display: inline-block
-            a
-              font-family: Ubuntu, sans-serif
-              font-weight: normal
-              line-height: normal
-              font-size: 13px
-              color: $color-menu
-
-          li:first-child
-            margin-left: 0
-
-          li:nth-child(3)
-            margin-right: 0
-
-    &__about-provider
-      width: 100%
-      display: flex
-      flex-direction: row
-      padding: 26px 54px 0 30px
-      margin-bottom: 66px
-
-      .container-title-and-text
+      .container-info
         width: 904px
-        .title
+        h3
           font-size: 25px
-          line-height: normal
           font-weight: bold
+          line-height: normal
+          margin-top: 5px
           margin-bottom: 13px
 
-        .text
+        p
           line-height: (25/16)
-          margin-bottom: 7px
+          margin-bottom: 5px
 
-        .link-more
+        a
           font-size: 16px
           line-height: (25/16)
           color: #9242F8
+          &:hover
+            color: lighten(#9242F8, 15%)
 
-        .link-more:hover
-          color: lighten(#9242F8, 10%)
+      img
+        width: 178px
+        height: 63px
+        margin-left: 33px
+        margin-top: 27px
 
-      .img-wrapper
-        margin-top: 23px
-        margin-left: auto
-        img
-          width: 178px
-          height: 63px
+  .content-description-services
+    .content-service
+      padding-bottom: 70px
 
+      .background-red
+        background: linear-gradient(176.49deg, #D73546 1.08%, #EF5260 100%)
+
+      .background-orange
+        background: linear-gradient(176.49deg, #FF5040 1.08%, #F57052 100%)
+
+      .background-purple
+        background: linear-gradient(176.49deg, #7E50FF 1.08%, #A933F2 100%)
+
+      .background-yellow
+        background: linear-gradient(176.49deg, #FD7A01 1.08%, #FCC12F 100%)
+
+      h2
+        margin-top: 30px
+        width: 100%
+        text-align: center
+        border-radius: 6px 6px 0 0
+        color: $color-white
+        padding: 17px 0 20px 0
+        line-height: (35/27)
+
+      .content-info-service
+        padding: 22px 30px 16px 30px
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        background: $color-white
+        border-bottom: solid 1px #d7e4f5
+
+        .container-button
+          margin-top: 15px
+          margin-right: 95px
+          button
+            background: #0EB780
+            border-width: 0
+            border-radius: 6px
+            padding: 19px 35px 18px 35px
+            font-weight: 500
+            line-height: normal
+            font-size: 14px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            color: $color-white
+            outline: none
+            box-shadow: 0 0 20px rgba(40, 48, 79, 0.03)
+            &:hover
+              background: lighten(#0EB780, 10%)
+
+        h4
+          text-align: right
+          margin-bottom: 1px
+
+        p
+          color: #212B4A
+          text-align: right
+
+        .container-cost
+          width: 193px
+
+          h4
+            color: #9242F8
+
+        .container-description-tarif
+          width: 394px
+          margin-left: auto

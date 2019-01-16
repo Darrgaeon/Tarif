@@ -1,7 +1,43 @@
 @import "../../vars"
 
 .content
+  &-heading
+    display: flex
+    width: 100%
+    justify-content: space-between
+
+    h1
+      letter-spacing: -0.18px
+
+    ul
+      display: flex
+      flex-wrap: wrap
+      margin-left: auto
+      padding: 0
+      position: relative
+      li
+        padding: 0
+        margin: 14px 12px 0 12px
+        list-style: none
+        display: inline-block
+        a
+          font-family: Ubuntu, sans-serif
+          font-weight: normal
+          line-height: normal
+          font-size: 13px
+          color: $color-menu
+
+      li:first-child
+        margin-left: 0
+
+      li:last-child
+        margin-right: 2px
+        color: #626C8D
+
   &-description
-    margin-top: 20px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-top: 23px
     padding: 22px 30px 16px 30px
     background: $color-white
