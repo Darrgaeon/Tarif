@@ -13,8 +13,8 @@
     top: -4px
 
 .content-article
-  padding: 26px 30px
-  margin-bottom: 100px
+  padding: 26px 30px 13px 30px
+  margin-bottom: 77px
   background: $color-white
   display: flex
   flex-direction: row
@@ -23,8 +23,6 @@
 
 .content-description-article
   width: 783px
-
-
 
   h2
     margin-bottom: 10px
@@ -49,7 +47,6 @@
   ol
     margin: 0
     padding: 0
-    word-break: break-all
     li
       list-style-position: inside
       padding: 0
@@ -57,7 +54,7 @@
       font-size: 16px
       &::before
         content: ""
-        width: 9px
+        padding-right: 9px
         display: inline-block
       a
         color: #2383E2
@@ -89,6 +86,7 @@
 
 
 .container-type-internet
+  margin-bottom: 4px
   h3
     margin-bottom: 17px
     line-height: (30/18)
@@ -99,7 +97,6 @@
   ul
     margin: 0
     padding: 0 20px
-    //padding: 0 57px
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -124,5 +121,37 @@
 
       p
         margin-left: 27px
+
+.container-connection-quality
+  h4
+    margin-bottom: 26px
+
+  img
+    margin-right: 30px
+
+  p
+    position: relative
+    top: -3px
+    margin-bottom: 10px
+
+  ol
+    margin: 0 0 19px 0
+    padding: 0
+    display: flex
+    flex-direction: column
+    li
+      padding: 0
+      margin-left: 48px
+      color: #9242F8
+      font-size: 16px
+      line-height: (29/16)
+      &::before
+        content: ""
+        padding-right: 12px
+        display: inline-block
+
+      span
+        color: $color-black
+
 
 
