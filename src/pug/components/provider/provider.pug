@@ -1,4 +1,4 @@
-//include ../../../pug/mixins/provider-service
+include ../../mixins/svg_sprite
 
 .container
     .content-card
@@ -12,8 +12,7 @@
                 li
                     a(href="#") Сотовая связь
                     +add_svg({class: "dropdown_right-2", icon: "dropdown_right"})
-                li
-                    a(href="#") MTS
+                li MTS
 
         .content-description
             .content-description-provider
@@ -24,59 +23,17 @@
                         | заданий играет определяющее значение для новых предложений. Повседневная практика показывает,
                         | что перспективное планирование играет важную роль в формировании нестандартных…
                     a(href="#") Подробнее
-                img(src="img/logo-mts.png", alt="logo-mts")
+                +add_svg({class: "logo-mts", icon: "logo-mts"})
 
 
         .content-description-services
+
             .content-service
-
-                // 1 block
-                h2.background-red Сотовая связь
+                .container-title
+                    h2(style="background: linear-gradient(176.49deg, #D73546 1.08%, #EF5260 100%)") Сотовая связь
                 .content-info-service
                     .container-button
-                        button Отправить заявку
-                    .container-cost
-                        h4 300 рублей
-                        p Цена в месяц, стоимость cим-карты 50 рублей
-                    .container-description-tarif
-                        h4 Безлимитище Plus
-                        p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
-                .content-info-service
-                    .container-button
-                        button Отправить заявку
-                    .container-cost
-                        h4 300 рублей
-                        p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
-                    .container-description-tarif
-                        h4 Мобильный интернет 2.0
-                        p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
-
-                // 2 block
-                h2.background-orange Интернет
-                .content-info-service
-                    .container-button
-                        button Отправить заявку
-                    .container-cost
-                        h4 300 рублей
-                        p Цена в месяц, стоимость cим-карты 50 рублей
-                    .container-description-tarif
-                        h4 Безлимитище Plus
-                        p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
-                .content-info-service
-                    .container-button
-                        button Отправить заявку
-                    .container-cost
-                        h4 300 рублей
-                        p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
-                    .container-description-tarif
-                        h4 Мобильный интернет 2.0
-                        p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
-
-                // 3 block
-                h2.background-purple Телевидение
-                .content-info-service
-                    .container-button
-                        button Отправить заявку
+                        a(href="#") Отправить заявку
                     .container-cost
                         h4 300 рублей
                         p Цена в месяц, стоимость cим-карты 50 рублей
@@ -86,7 +43,7 @@
 
                 .content-info-service
                     .container-button
-                        button Отправить заявку
+                        a(href="#") Отправить заявку
                     .container-cost
                         h4 300 рублей
                         p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
@@ -94,11 +51,12 @@
                         h4 Мобильный интернет 2.0
                         p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
 
-                // 4 block
-                h2.background-yellow Пакеты 3 в 1
+            .content-service
+                .container-title
+                    h2(style="background: linear-gradient(176.49deg, #FF5040 1.08%, #F57052 100%)") Интернет
                 .content-info-service
                     .container-button
-                        button Отправить заявку
+                        a(href="#") Отправить заявку
                     .container-cost
                         h4 300 рублей
                         p Цена в месяц, стоимость cим-карты 50 рублей
@@ -108,7 +66,7 @@
 
                 .content-info-service
                     .container-button
-                        button Отправить заявку
+                        a(href="#") Отправить заявку
                     .container-cost
                         h4 300 рублей
                         p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
@@ -117,80 +75,48 @@
                         p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
 
 
+            .content-service
+                .container-title
+                    h2(style="background: linear-gradient(176.49deg, #7E50FF 1.08%, #A933F2 100%)") Телевидение
+                .content-info-service
+                    .container-button
+                        a(href="#") Отправить заявку
+                    .container-cost
+                        h4 300 рублей
+                        p Цена в месяц, стоимость cим-карты 50 рублей
+                    .container-description-tarif
+                        h4 Безлимитище Plus
+                        p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
 
+                .content-info-service
+                    .container-button
+                        a(href="#") Отправить заявку
+                    .container-cost
+                        h4 300 рублей
+                        p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
+                    .container-description-tarif
+                        h4 Мобильный интернет 2.0
+                        p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
 
+            .content-service
+                .container-title
+                    h2(style="background: linear-gradient(176.49deg, #FD7A01 1.08%, #FCC12F 100%)") Пакеты 3 в 1
+                .content-info-service
+                    .container-button
+                        a(href="#") Отправить заявку
+                    .container-cost
+                        h4 300 рублей
+                        p Цена в месяц, стоимость cим-карты 50 рублей
+                    .container-description-tarif
+                        h4 Безлимитище Plus
+                        p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
 
-
-
-
-
-        // 2 block
-        //.content-description-services
-        //    h2.background-orange Интернет
-        //    .content-info-service
-        //        .container-button
-        //            button Отправить заявку
-        //        .container-cost
-        //            h4 300 рублей
-        //            p Цена в месяц, стоимость cим-карты 50 рублей
-        //        .container-description-tarif
-        //            h4 Безлимитище Plus
-        //            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
-        //
-        //    .content-info-service
-        //        .container-button
-        //            button Отправить заявку
-        //        .container-cost
-        //            h4 300 рублей
-        //            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
-        //        .container-description-tarif
-        //            h4 Мобильный интернет 2.0
-        //            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
-        //
-
-
-        //// 3 block
-        //.content-description-services
-        //    h2.background-purple Телевидение
-        //    .content-info-service
-        //        .container-button
-        //            button Отправить заявку
-        //        .container-cost
-        //            h4 300 рублей
-        //            p Цена в месяц, стоимость cим-карты 50 рублей
-        //        .container-description-tarif
-        //            h4 Безлимитище Plus
-        //            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
-        //
-        //    .content-info-service
-        //        .container-button
-        //            button Отправить заявку
-        //        .container-cost
-        //            h4 300 рублей
-        //            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
-        //        .container-description-tarif
-        //            h4 Мобильный интернет 2.0
-        //            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
-        //
-        //// 4 block
-        //.content-description-services
-        //    h2.background-yellow Пакеты 3 в 1
-        //    .content-info-service
-        //        .container-button
-        //            button Отправить заявку
-        //        .container-cost
-        //            h4 300 рублей
-        //            p Цена в месяц, стоимость cим-карты 50 рублей
-        //        .container-description-tarif
-        //            h4 Безлимитище Plus
-        //            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут
-        //
-        //    .content-info-service
-        //        .container-button
-        //            button Отправить заявку
-        //        .container-cost
-        //            h4 300 рублей
-        //            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
-        //        .container-description-tarif
-        //            h4 Мобильный интернет 2.0
-        //            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон
+                .content-info-service
+                    .container-button
+                        a(href="#") Отправить заявку
+                    .container-cost
+                        h4 300 рублей
+                        p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно
+                    .container-description-tarif
+                        h4 Мобильный интернет 2.0
+                        p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон

@@ -9,9 +9,10 @@ function init() {
     $(document).ready(function () {
         // Globals
         require("ddslick/dist/jquery.ddslick.min");
+        require("./components/collapse")();
 
 
-        require("./components/select")();
+        // require("./components/select")();
     });
 }
 

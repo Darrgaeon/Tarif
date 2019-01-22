@@ -1,0 +1,47 @@
+@import "../../vars"
+@import "../../functions"
+
+.collapsible
+  background: linear-gradient(176.19deg, #7E50FF 1.08%, #A933F2 100%)
+  border-radius: 6px
+  color: $color-white
+  cursor: pointer
+  padding: 12px 19px 12px 19px
+  width: 100%
+  border: none
+  text-align: left
+  outline: none
+  position: relative
+  font-size: 16px
+  font-weight: 500
+  line-height: (27/16)
+  margin-top: 8px
+
+.content-collapse
+  margin-bottom: 12px
+  display: none
+  overflow: hidden
+  background-color: #EFF7FF
+  padding: 13px 27px 11px 18px
+  p
+    margin-bottom: 0 !important
+
+.collapsible-dropdown
+  width: 17px
+  height: 17px
+  fill: $color-white
+  position: absolute
+  right: 20px
+  top: 21px
+
+.collapsible-dropdown-close
+  transform: rotate(180deg)
+  position: absolute
+  right: 19px
+  top: 14px
+
+.collapse-margin
+  margin-bottom: 5px
+
+[class~='collapse-margin']:last-of-type
+  margin-bottom: 50px

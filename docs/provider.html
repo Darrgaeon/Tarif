@@ -31,7 +31,7 @@
     <section class="header">
       <section class="nav-bar">
         <div class="container">
-          <div class="nav-bar-container"><a href="#">
+          <div class="nav-bar-container"><a class="logo" href="#">
                     <svg class="nav-bar__logo">
                       <use xlink:href="svg/sprite.svg#svg--logo"></use>
                     </svg></a>
@@ -65,7 +65,6 @@
       </section>
     </section>
     <section class="content">
-      <!--include ../../../pug/mixins/provider-service-->
       <div class="container">
         <div class="content-card">
           <div class="content-heading">
@@ -81,7 +80,7 @@
                         <use xlink:href="svg/sprite.svg#svg--dropdown_right"></use>
                       </svg>
               </li>
-              <li><a href="#">MTS</a></li>
+              <li>MTS</li>
             </ul>
           </div>
           <div class="content-description">
@@ -93,17 +92,19 @@
                   заданий играет определяющее значение для новых предложений. Повседневная практика показывает,
                   что перспективное планирование играет важную роль в формировании нестандартных…
                 </p><a href="#">Подробнее</a>
-              </div><img src="img/logo-mts.png" alt="logo-mts">
+              </div>
+                    <svg class="logo-mts">
+                      <use xlink:href="svg/sprite.svg#svg--logo-mts"></use>
+                    </svg>
             </div>
           </div>
           <div class="content-description-services">
             <div class="content-service">
-              <!-- 1 block-->
-              <h2 class="background-red">Сотовая связь</h2>
+              <div class="container-title">
+                <h2 style="background: linear-gradient(176.49deg, #D73546 1.08%, #EF5260 100%)">Сотовая связь</h2>
+              </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
@@ -114,9 +115,7 @@
                 </div>
               </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
@@ -126,12 +125,13 @@
                   <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
                 </div>
               </div>
-              <!-- 2 block-->
-              <h2 class="background-orange">Интернет</h2>
+            </div>
+            <div class="content-service">
+              <div class="container-title">
+                <h2 style="background: linear-gradient(176.49deg, #FF5040 1.08%, #F57052 100%)">Интернет</h2>
+              </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
@@ -142,9 +142,7 @@
                 </div>
               </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
@@ -154,12 +152,13 @@
                   <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
                 </div>
               </div>
-              <!-- 3 block-->
-              <h2 class="background-purple">Телевидение</h2>
+            </div>
+            <div class="content-service">
+              <div class="container-title">
+                <h2 style="background: linear-gradient(176.49deg, #7E50FF 1.08%, #A933F2 100%)">Телевидение</h2>
+              </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
@@ -170,9 +169,7 @@
                 </div>
               </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
@@ -182,12 +179,13 @@
                   <p>25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон</p>
                 </div>
               </div>
-              <!-- 4 block-->
-              <h2 class="background-yellow">Пакеты 3 в 1</h2>
+            </div>
+            <div class="content-service">
+              <div class="container-title">
+                <h2 style="background: linear-gradient(176.49deg, #FD7A01 1.08%, #FCC12F 100%)">Пакеты 3 в 1</h2>
+              </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость cим-карты 50 рублей</p>
@@ -198,9 +196,7 @@
                 </div>
               </div>
               <div class="content-info-service">
-                <div class="container-button">
-                  <button>Отправить заявку</button>
-                </div>
+                <div class="container-button"><a href="#">Отправить заявку</a></div>
                 <div class="container-cost">
                   <h4>300 рублей</h4>
                   <p>Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно</p>
@@ -212,74 +208,6 @@
               </div>
             </div>
           </div>
-          <!-- 2 block-->
-          <!--.content-description-services-->
-          <!--    h2.background-orange Интернет-->
-          <!--    .content-info-service-->
-          <!--        .container-button-->
-          <!--            button Отправить заявку-->
-          <!--        .container-cost-->
-          <!--            h4 300 рублей-->
-          <!--            p Цена в месяц, стоимость cим-карты 50 рублей-->
-          <!--        .container-description-tarif-->
-          <!--            h4 Безлимитище Plus-->
-          <!--            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут-->
-          <!---->
-          <!--    .content-info-service-->
-          <!--        .container-button-->
-          <!--            button Отправить заявку-->
-          <!--        .container-cost-->
-          <!--            h4 300 рублей-->
-          <!--            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно-->
-          <!--        .container-description-tarif-->
-          <!--            h4 Мобильный интернет 2.0-->
-          <!--            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон-->
-          <!---->
-          <!--// 3 block-->
-          <!--.content-description-services-->
-          <!--    h2.background-purple Телевидение-->
-          <!--    .content-info-service-->
-          <!--        .container-button-->
-          <!--            button Отправить заявку-->
-          <!--        .container-cost-->
-          <!--            h4 300 рублей-->
-          <!--            p Цена в месяц, стоимость cим-карты 50 рублей-->
-          <!--        .container-description-tarif-->
-          <!--            h4 Безлимитище Plus-->
-          <!--            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут-->
-          <!---->
-          <!--    .content-info-service-->
-          <!--        .container-button-->
-          <!--            button Отправить заявку-->
-          <!--        .container-cost-->
-          <!--            h4 300 рублей-->
-          <!--            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно-->
-          <!--        .container-description-tarif-->
-          <!--            h4 Мобильный интернет 2.0-->
-          <!--            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон-->
-          <!---->
-          <!--// 4 block-->
-          <!--.content-description-services-->
-          <!--    h2.background-yellow Пакеты 3 в 1-->
-          <!--    .content-info-service-->
-          <!--        .container-button-->
-          <!--            button Отправить заявку-->
-          <!--        .container-cost-->
-          <!--            h4 300 рублей-->
-          <!--            p Цена в месяц, стоимость cим-карты 50 рублей-->
-          <!--        .container-description-tarif-->
-          <!--            h4 Безлимитище Plus-->
-          <!--            p Неограниченные звонки и текстовые сообщения, 100 гб интернет, 100 минут международных минут-->
-          <!---->
-          <!--    .content-info-service-->
-          <!--        .container-button-->
-          <!--            button Отправить заявку-->
-          <!--        .container-cost-->
-          <!--            h4 300 рублей-->
-          <!--            p Цена в месяц, стоимость сим-карты при подключении тарифа бесплатно-->
-          <!--        .container-description-tarif-->
-          <!--            h4 Мобильный интернет 2.0-->
-          <!--            p 25 гб интернет, 60 минут минут по межгороду, неограниченные звонки и текстовые сообщения,50 смс и функция автодозвон-->
         </div>
       </div>
     </section>
@@ -305,7 +233,7 @@
                     </label>
                   </div>
                   <div class="container-button">
-                    <button class="button-send">Отправить</button>
+                    <button class="button-send" type="submit">Отправить</button>
                   </div>
                 </div>
               </form>
@@ -326,7 +254,7 @@
       </section>
       <section class="nav-links">
         <div class="container">
-          <div class="nav-links-container"><a href="#">
+          <div class="nav-links-container"><a class="logo" href="#">
                     <svg class="nav-links__logo">
                       <use xlink:href="svg/sprite.svg#svg--logo"></use>
                     </svg></a>
@@ -342,13 +270,14 @@
                 <li><a href="#">Телевидение</a></li>
                 <li><a href="#">Пакеты 3 в 1</a></li>
               </ul>
-            </nav><a class="container-facebook" href="#">
-                    <svg class="nav-links__facebook">
-                      <use xlink:href="svg/sprite.svg#svg--facebook"></use>
-                    </svg></a><a class="container-instagram" href="#">
-                    <svg class="nav-links__instagram">
-                      <use xlink:href="svg/sprite.svg#svg--instagram"></use>
-                    </svg></a>
+            </nav>
+            <div class="container-social"><a class="container-facebook container-social-icon" href="#">
+                      <svg class="container-social__facebook">
+                        <use xlink:href="svg/sprite.svg#svg--facebook"></use>
+                      </svg></a><a class="container-instagram container-social-icon" href="#">
+                      <svg class="container-social__instagram">
+                        <use xlink:href="svg/sprite.svg#svg--instagram"></use>
+                      </svg></a></div>
           </div>
         </div>
       </section>

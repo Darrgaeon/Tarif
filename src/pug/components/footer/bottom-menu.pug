@@ -3,13 +3,14 @@ include ../../mixins/svg_sprite
 section.nav-links
     .container
         .nav-links-container
-            a(href="#")
+            a(href="#").logo
                 +add_svg({class: "nav-links__logo", icon: "logo"})
 
             include ../nav-bar/adaptive-menu
 
-            a(href="#").container-facebook
-                +add_svg({class: "nav-links__facebook", icon: "facebook"})
-            a(href="#").container-instagram
-                +add_svg({class: "nav-links__instagram", icon: "instagram"})
+            .container-social
+                a(href="#").container-facebook.container-social-icon
+                    +add_svg({class: "container-social__facebook", icon: "facebook"})
+                a(href="#").container-instagram.container-social-icon
+                    +add_svg({class: "container-social__instagram", icon: "instagram"})
 
