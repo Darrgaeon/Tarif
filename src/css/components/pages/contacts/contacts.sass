@@ -2,7 +2,7 @@
 @import "../../functions"
 
 
-.container-forms
+.content-forms
   width: 776px
   position: relative
 
@@ -51,7 +51,7 @@
   font-size: 18px
 
 .textarea-contacts
-  width: 776px
+  width: 100%
   height: 198px
   border-radius: 6px
   border: 1px solid #D6E4F5
@@ -156,24 +156,23 @@
       display: flex
       margin: 7px 16px 8px 0
       border-radius: 6px
+      background: #ededed
 
     .social-icon-contacts-facebook
       padding: 7px 14px 8px 14px
-      background: #3869E9
 
       transition: background $transition-duration
 
       &:hover
-        background: lighten(#3869E9, 5%)
+        background: #3869E9
 
     .social-icon-contacts-instagram
       padding: 8px 7px 7px 8px
-      background: #DF4DE2
 
       transition: background $transition-duration
 
       &:hover
-        background: lighten(#DF4DE2, 5%)
+        background: #DF4DE2
 
 
 .contacts-icon-facebook
@@ -183,4 +182,52 @@
 .contacts-icon-instagram
   width: 25px
   height: 25px
+
+
+.content-contacts-category
+  margin-bottom: 29px
+  h1
+    line-height: normal
+    font-size: 30px
+    margin-bottom: 21px
+
+.container-contacts-category
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.item-contacts-category
+  display: flex
+  flex-direction: column
+  width: 281px
+  height: 186px
+  border-radius: 6px
+  padding: 25px 0 30px 30px
+  position: relative
+  margin: 0 (25px/2)
+  //filter: blur(20px)
+  h2
+    line-height: (35/27)
+    color: $color-white
+
+.item-contacts-category:first-child
+  margin-left: 0
+
+.item-contacts-category:last-child
+  margin-right: 0
+
+
+.container-icon-category
+  position: absolute
+  .category-icon
+    width: 100%
+    height: 100%
+
+.category-icon-arrow
+  width: 17px
+  height: 12px
+  position: absolute
+  top: 145px
+  opacity: .50
 

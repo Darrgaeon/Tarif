@@ -13,7 +13,7 @@ include ../../mixins/svg_sprite
 
 
         .content-description-contacts
-            .container-forms
+            .content-forms
                 label.label-contacts
                     input(type="text"
                     placeholder="Имя"
@@ -54,3 +54,39 @@ include ../../mixins/svg_sprite
                         a(href="#").social-icon-contacts.social-icon-contacts-instagram
                             +add_svg({class: "contacts-icon-instagram", icon: "instagram"})
                         span Мы в Instagram
+
+        .content-contacts-category
+            h1 Категории
+            .container-contacts-category
+                a(href="#").item-contacts-category(style="background: linear-gradient(145.92deg, #FD7A01 1.08%, #FCC12F 100%)")
+                    h2
+                        | Пакеты <br/>
+                        | 3 в 1
+                    .container-icon-category(style="width: 106px; height: 96px; top: 60px; right: 30px")
+                        +add_svg({class: "category-icon", icon: "item-category-1"})
+                    +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+                a(href="#").item-contacts-category(style="background: linear-gradient(145.77deg, #FF5040 1.08%, #F57052 100%)")
+                    h2 Интернет
+                    .container-icon-category(style="width: 104px; height: 98px; top: 60px; right: 30px")
+                        +add_svg({class: "category-icon", icon: "item-2"})
+                    +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+                a(href="#").item-contacts-category(style="background: linear-gradient(145.77deg, #D73546 1.08%, #EF5260 100%)")
+                    h2
+                        | Сотовая <br/>
+                        | связь
+                    .container-icon-category(style="width: 77px; height: 96px; top: 60px; right: 27px")
+                        +add_svg({class: "category-icon", icon: "item-3"})
+                    +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+                a(href="#").item-contacts-category(style="background: linear-gradient(145.77deg, #7E50FF 1.08%, #A933F2 100%)")
+                    h2
+                        | Теле- <br/>
+                        | видение
+                    .container-icon-category(style="width: 75px; height: 99px; top: 58px; right: 21px")
+                        +add_svg({class: "category-icon", icon: "item-4"})
+                    +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+
+
