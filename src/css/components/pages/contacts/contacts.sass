@@ -1,0 +1,174 @@
+@import "../../vars"
+@import "../../functions"
+
+
+.container-forms
+  //width: 826px
+  width: 776px
+  position: relative
+  //776
+  //border-right: 1px solid #D6E4F5
+
+  &:before
+    content: ""
+    display: block
+
+    position: absolute
+    right: -51px
+    top: -30px
+
+    width: 1px
+    height: 410px
+
+    background: #D6E4F5
+    border-radius: 3px
+
+.label-contacts
+  margin-left: 9px
+  margin-right: 8px
+  margin-bottom: 15px
+
+.input-contacts
+  width: 245px
+  height: 53px
+  border-radius: 6px
+  border: 1px solid #D6E4F5
+  padding: 20px 18px
+  font-size: 18px
+  outline: none
+  &::placeholder
+    color: #536396
+
+.label-contacts:first-child
+  margin-left: 0
+
+.label-contacts:nth-child(3)
+  margin-right: 0
+
+
+
+.input-contacts-phone
+  font-family: Roboto, sans-serif
+  font-weight: normal
+  line-height: normal
+  font-size: 18px
+
+.textarea-contacts
+  width: 776px
+  height: 198px
+  border-radius: 6px
+  border: 1px solid #D6E4F5
+  padding: 13px 18px
+  margin-bottom: 34px
+  outline: none
+  &::placeholder
+    font-family: Roboto, sans-serif
+    font-style: normal
+    font-weight: normal
+    line-height: normal
+    font-size: 18px
+    color: #536396
+
+.container-forms-footer
+  display: flex
+  flex-direction: row
+
+
+.privacy-policy-contacts
+  display: flex
+  flex-direction: column
+  width: 434px
+  font-weight: normal
+  line-height: (18/13)
+  font-size: 13px
+  color: #536396
+  margin-left: 7px
+
+  span:nth-child(2)
+    margin-top: 1px
+
+  a
+    color: $color-black
+    border-bottom: 1px solid #6186E2
+    padding-bottom: 1px
+    transition: border-color .2s
+
+    &:hover
+      color: inherit
+      text-decoration: none
+      border-color: $color-black
+
+
+.container-button
+  margin-left: auto
+  //margin-top: -9px
+  position: relative
+  top: -9px
+  .button-send
+    font-family: Rubik, sans-serif
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+    font-size: 14px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: $color-white
+    transition: background $transition-duration
+    background: #12C78C
+    padding: 19px 65px 18px 66px
+    border-width: 0
+    border-radius: 6px
+    box-shadow: 0 0 20px rgba(40, 48, 79, 0.03)
+    outline: none
+    cursor: pointer
+    &:hover
+      background: lighten(#12C78C, 10%)
+
+
+.content-sosial-contacts
+  //background: red
+  margin-left: auto
+  width: 170px
+  position: relative
+  top: 1px
+
+  h3
+    font-size: 25px
+    line-height: normal
+    font-weight: bold
+    margin-bottom: 17px
+
+
+.container-social-contacts
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+  .container-icon
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    font-size: 15px
+    font-weight: 500
+    line-height: normal
+
+    .social-icon-contacts
+      width: 40px
+      height: 40px
+      justify-content: center
+      align-items: center
+      display: flex
+      margin: 7px 16px 8px 0
+      border-radius: 6px
+
+
+.contacts-icon-facebook
+  width: 12px
+  height: 25px
+
+.contacts-icon-instagram
+  width: 25px
+  height: 25px
+

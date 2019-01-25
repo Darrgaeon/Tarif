@@ -17,27 +17,30 @@
       position: relative
       li
         padding: 0
-        margin: 14px 12px 0 12px
+        margin: 16px 12px 0 12px
         list-style: none
         display: inline-block
         font-family: Ubuntu, sans-serif
         font-weight: normal
         line-height: normal
         font-size: 13px
-        color: #626C8D
         a
           color: $color-menu
+
+        a:last-child
+          color: #626C8D
 
       li:first-child
         margin-left: 0
 
       li:last-child
-        margin-right: 2px
+        margin-right: 0px
 
   &-description
     display: flex
     flex-direction: row
     flex-wrap: wrap
     margin-top: 23px
+    margin-bottom: 29px
     padding: 22px 30px 16px 30px
     background: $color-white

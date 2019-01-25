@@ -1,0 +1,56 @@
+include ../../mixins/svg_sprite
+
+.container
+    .content-card
+        .content-heading
+            h1 Контакты
+
+            ul
+                li
+                    a(href="#") Главная
+                    +add_svg({class: "dropdown_right-1", icon: "dropdown_right"})
+                li Контакты
+
+
+        .content-description-contacts
+            .container-forms
+                label.label-contacts
+                    input(type="text"
+                    placeholder="Имя"
+                    name="name"
+                    ).input-contacts
+
+                label.label-contacts
+                    input(type="email"
+                    placeholder="Почта"
+                    name="email"
+                    ).input-contacts
+
+                label.label-contacts
+                    input(type="tel"
+                    placeholder="05 ________"
+                    name="phone"
+                    ).input-contacts.input-contacts-phone
+
+                textarea(name="comment"
+                placeholder="Ваше сообщение").textarea-contacts
+
+                .container-forms-footer
+                    .privacy-policy-contacts
+                        span Нажимая на кнопку отправить,
+                        span вы соглашаетесь с #[a(href="#") политикой конфиденциальности]
+
+                    .container-button
+                        button(type="submit").button-send Отправить
+
+            .content-sosial-contacts
+                h3 Соц. сети
+                .container-social-contacts
+                    .container-icon
+                        a(href="#").social-icon-contacts(style="background: #3869E9;")
+                            +add_svg({class: "contacts-icon-facebook", icon: "facebook"})
+                        span Мы в Facebook
+                    .container-icon
+                        a(href="#").social-icon-contacts(style="background: #DF4DE2;")
+                            +add_svg({class: "contacts-icon-instagram", icon: "instagram"})
+                        span Мы в Instagram
