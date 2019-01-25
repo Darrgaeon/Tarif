@@ -8,9 +8,10 @@ section.nav-links
 
             include ../nav-bar/adaptive-menu
 
-            .container-social
-                a(href="#").container-facebook.container-social-icon
-                    +add_svg({class: "container-social__facebook", icon: "facebook"})
-                a(href="#").container-instagram.container-social-icon
-                    +add_svg({class: "container-social__instagram", icon: "instagram"})
-
+            .container-social-bottom-menu
+                .container-icon
+                    a(href="#").social-icon-bottom-menu.social-icon-bottom-menu-facebook
+                        +add_svg({class: "bottom-menu-icon-facebook", icon: "facebook"})
+                .container-icon
+                    a(href="#").social-icon-bottom-menu.social-icon-bottom-menu-instagram
+                        +add_svg({class: "bottom-menu-icon-instagram", icon: "instagram"})

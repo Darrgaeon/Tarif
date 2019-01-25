@@ -13,7 +13,6 @@
   &-container
     display: flex
     flex-direction: row
-    justify-content: center
     align-items: center
     flex-wrap: wrap
 
@@ -21,27 +20,43 @@
       margin-right: 140px
 
 
-    .container-social
-      margin-left: auto
+.container-social-bottom-menu
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin-left: auto
 
-      &-icon
-        background: #202039
-        border-radius: 5px
-        margin: 0 3px
+  .container-icon
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    margin: 0 5px
 
-      &-icon:last-child
-        margin-right: 0
+  .container-icon:last-child
+    margin-right: -1px
 
-      .container-facebook
-        padding: 10px 12px 10px 13px
+.social-icon-bottom-menu
+  justify-content: center
+  align-items: center
+  display: flex
+  border-radius: 6px
+  background: #202039
+  transition: background $transition-duration
+  &:hover
+    background: lighten(#202039, 10%)
 
-      .container-instagram
-        padding: 10px 8px 10px 6px
+.social-icon-bottom-menu-facebook
+  padding: 7px 12px 7px 13px
 
-      &__facebook
-          width: 11px
-          height: 22px
+.social-icon-bottom-menu-instagram
+  padding: 7px
 
-      &__instagram
-        width: 22px
-        height: 22px
+.bottom-menu-icon-facebook
+  width: 11px
+  height: 22px
+
+.bottom-menu-icon-instagram
+  width: 22px
+  height: 22px

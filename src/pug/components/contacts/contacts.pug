@@ -40,17 +40,17 @@ include ../../mixins/svg_sprite
                         span Нажимая на кнопку отправить,
                         span вы соглашаетесь с #[a(href="#") политикой конфиденциальности]
 
-                    .container-button
+                    .container-button-contacts
                         button(type="submit").button-send Отправить
 
             .content-sosial-contacts
                 h3 Соц. сети
                 .container-social-contacts
                     .container-icon
-                        a(href="#").social-icon-contacts(style="background: #3869E9;")
+                        a(href="#").social-icon-contacts.social-icon-contacts-facebook
                             +add_svg({class: "contacts-icon-facebook", icon: "facebook"})
                         span Мы в Facebook
                     .container-icon
-                        a(href="#").social-icon-contacts(style="background: #DF4DE2;")
+                        a(href="#").social-icon-contacts.social-icon-contacts-instagram
                             +add_svg({class: "contacts-icon-instagram", icon: "instagram"})
                         span Мы в Instagram

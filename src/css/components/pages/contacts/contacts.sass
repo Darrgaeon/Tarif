@@ -3,11 +3,8 @@
 
 
 .container-forms
-  //width: 826px
   width: 776px
   position: relative
-  //776
-  //border-right: 1px solid #D6E4F5
 
   &:before
     content: ""
@@ -61,6 +58,7 @@
   padding: 13px 18px
   margin-bottom: 34px
   outline: none
+  resize: none
   &::placeholder
     font-family: Roboto, sans-serif
     font-style: normal
@@ -99,9 +97,8 @@
       border-color: $color-black
 
 
-.container-button
+.container-button-contacts
   margin-left: auto
-  //margin-top: -9px
   position: relative
   top: -9px
   .button-send
@@ -126,7 +123,6 @@
 
 
 .content-sosial-contacts
-  //background: red
   margin-left: auto
   width: 170px
   position: relative
@@ -155,13 +151,29 @@
     line-height: normal
 
     .social-icon-contacts
-      width: 40px
-      height: 40px
       justify-content: center
       align-items: center
       display: flex
       margin: 7px 16px 8px 0
       border-radius: 6px
+
+    .social-icon-contacts-facebook
+      padding: 7px 14px 8px 14px
+      background: #3869E9
+
+      transition: background $transition-duration
+
+      &:hover
+        background: lighten(#3869E9, 5%)
+
+    .social-icon-contacts-instagram
+      padding: 8px 7px 7px 8px
+      background: #DF4DE2
+
+      transition: background $transition-duration
+
+      &:hover
+        background: lighten(#DF4DE2, 5%)
 
 
 .contacts-icon-facebook
