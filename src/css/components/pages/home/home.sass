@@ -1,15 +1,35 @@
 @import "../../vars"
 @import "../../functions"
 
-.content-description-ellipses
+.content-heading-tariff
   padding-top: 27px
-  height: 590px
+  height: 650px
 
   img
     position: absolute
     z-index: 0
 
-.container-content-ellipse
+  .container-category
+    position: relative
+    top: 387px
+
+  a:first-child
+    position: relative
+    top: -46px
+
+  a:last-child
+    position: relative
+    top: -47px
+
+  a:hover
+    .container-category a
+      margin: 0 6px !important
+    .item-category
+      width: 296px
+      height: 197px
+
+
+.container-content-ellipses
   position: absolute
   display: flex
   justify-content: center
@@ -29,6 +49,7 @@
     background: linear-gradient(103deg, #6363E7 33.73%, #2390CA 100%)
     border-radius: 50%
     position: relative
+    left: -1px
 
     h2, p
       text-align: center
@@ -66,3 +87,8 @@
     .small-ellipse-center
       border-radius: 50%
       background: linear-gradient(148.12deg, #7073DD 13.9%, #3E9EE4 84.02%)
+
+
+.content-description-text
+  background: $color-white
+  padding: 46px 50px 48px 49px

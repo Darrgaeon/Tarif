@@ -10,7 +10,7 @@ function init() {
         // Globals
         require("ddslick/dist/jquery.ddslick.min");
         require("./components/collapse")();
-
+        require("./components/items-category")();
 
         // require("./components/select")();
     });

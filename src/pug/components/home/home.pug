@@ -2,9 +2,9 @@ include ../../mixins/svg_sprite
 
 
 .container
-    .content-description-home
-        .content-description-ellipses
-            .container-content-ellipse
+    .content-home
+        .content-heading-tariff
+            .container-content-ellipses
                 img(
                     src="img/ellipse-home-1.svg"
                     style="width: 1238px; height: 777px; top: -153px"
@@ -63,3 +63,43 @@ include ../../mixins/svg_sprite
                 .container-small-ellipse(style="width: 92px; height: 92px; top: 148px; left: -38px;")
                     .small-ellipse
                         .small-ellipse-center(style="height: 56px; width: 56px")
+
+            .container-category
+                a(href="#")
+                    .item-category(style="background: linear-gradient(145.92deg, #FD7A01 1.08%, #FCC12F 100%)")
+                        h2
+                            | Пакеты <br/>
+                            | 3 в 1
+                        .container-icon-category(style="width: 106px; height: 96px; top: 60px; right: 30px")
+                            img(src="img/item-category-1.svg")
+                        +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+                a(href="#")
+                    .item-category(style="background: linear-gradient(145.77deg, #FF5040 1.08%, #F57052 100%)")
+                        h2 Интернет
+                        .container-icon-category(style="width: 104px; height: 98px; top: 60px; right: 30px")
+                            img(src="img/item-category-2.svg")
+                        +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+                a(href="#")
+                    .item-category(style="background: linear-gradient(145.77deg, #D73546 1.08%, #EF5260 100%)")
+                        h2
+                            | Сотовая <br/>
+                            | связь
+                        .container-icon-category(style="width: 77px; height: 96px; top: 60px; right: 27px")
+                            img(src="img/item-category-3.svg")
+                        +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+                a(href="#")
+                    .item-category(style="background: linear-gradient(145.77deg, #7E50FF 1.08%, #A933F2 100%)")
+                        h2
+                            | Теле- <br/>
+                            | видение
+                        .container-icon-category(style="width: 75px; height: 99px; top: 58px; right: 20px")
+                            img(src="img/item-category-4.svg")
+                        +add_svg({class: "category-icon-arrow", icon: "arrow"})
+
+        .content-description-text
+            p Tarif это зафиксированная на каком-либо материальном носителе человеческая мысль, в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия текст: имманентная и репрезентативная, более частная!
+            +add_svg({class: "logo-tariff", icon: "logo-tariff"})
+

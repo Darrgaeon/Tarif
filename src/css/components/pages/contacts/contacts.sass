@@ -184,29 +184,43 @@
   height: 25px
 
 
-.content-contacts-category
-  margin-bottom: 29px
+.content-category
+  margin-bottom: 28px
   h1
     line-height: normal
     font-size: 30px
-    margin-bottom: 21px
+    margin-bottom: 16px
 
-.container-contacts-category
+.container-category
   width: 100%
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  height: 197px
+  align-items: center
 
   a
-    margin: 0 (25px/2)
+    //margin: 0 (25px/2)
+    margin: 0 11px
 
-  a:first-child
+  a:first-child, a:hover:first-child
     margin-left: 0
 
-  a:last-child
+  a:last-child, a:hover:last-child
     margin-right: 0
 
-.item-contacts-category
+  a:hover
+    margin: 0 1px
+
+    .item-category
+      width: 296px
+      height: 197px
+
+    .category-icon-arrow
+      opacity: 1
+
+
+.item-category
   display: flex
   flex-direction: column
   width: 281px
@@ -214,17 +228,11 @@
   border-radius: 6px
   padding: 25px 0 30px 30px
   position: relative
-  //margin: 0 (25px/2)
   //filter: blur(20px)
-  h2
-    line-height: (35/27)
-    color: $color-white
 
-//.item-contacts-category:first-child
-//  margin-left: 0
-//
-//.item-contacts-category:last-child
-//  margin-right: 0
+  h2
+    line-height: (33/27)
+    color: $color-white
 
 
 .container-icon-category
