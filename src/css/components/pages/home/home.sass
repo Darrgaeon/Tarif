@@ -1,53 +1,68 @@
 @import "../../vars"
 @import "../../functions"
 
-.content-description-tariff
-  position: relative
+.content-description-ellipses
+  padding-top: 27px
+  height: 590px
 
-  .container-ellipses
-    //position: relative
+  img
+    position: absolute
+    z-index: 0
+
+.container-content-ellipse
+  position: absolute
+  display: flex
+  justify-content: center
+
+.container-ellipses-center
+  width: 1199px
+  height: 631px
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .ellipse
+    content: ""
+    width: 476px
+    height: 476px
+    background: linear-gradient(103deg, #6363E7 33.73%, #2390CA 100%)
+    border-radius: 50%
+    position: relative
+
+    h2, p
+      text-align: center
+      color: $color-white
+      position: absolute
+
+    h2
+      width: 307px
+      font-size: 30px
+      line-height: normal
+      top: 95px
+      left: 84px
+
+    p
+      width: 303px
+      font-size: 17px
+      line-height: (25/17)
+      top: 185px
+      left: 88px
+
+
+.container-small-ellipse
+  position: absolute
+  top: 0
+  right: 0
+  .small-ellipse
+    border-radius: 50%
+    width: 100%
+    height: 100%
     display: flex
     justify-content: center
-    height: 570px
-    overflow: hidden
-
-    img
-      position: absolute
-      z-index: 0
-
-
-    .container-full-ellipse
-      width: 476px
-      height: 476px
-      z-index: 0
-      overflow: hidden
-      position: absolute
-      top: 78px
-      left: 361px
-
-      .ellipse
-        content: ""
-        width: 100%
-        height: 100%
-        background: linear-gradient(103deg, #6363E7 33.73%, #2390CA 100%)
-        border-radius: 50%
-        position: relative
-
-        h2, p
-          text-align: center
-          color: $color-white
-          position: absolute
-
-        h2
-          font-size: 30px
-          line-height: normal
-          top: 95px
-          left: 88px
-          letter-spacing: -0.13px
-
-        p
-          font-size: 17px
-          line-height: (25/17)
-          top: 185px
-          left: 88px
-
+    align-items: center
+    border: 1px solid #d2d9fa
+    background: #eff8ff
+    .small-ellipse-center
+      border-radius: 50%
+      background: linear-gradient(148.12deg, #7073DD 13.9%, #3E9EE4 84.02%)
