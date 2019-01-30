@@ -57,17 +57,25 @@
               </ul>
             </nav>
             <div class="nav-bar__switch-language">
+              <button>Rus</button>
                     <svg class="nav-bar__switch-language__icon">
                       <use xlink:href="svg/sprite.svg#svg--www"></use>
                     </svg>
                     <svg class="nav-bar__switch-language__dropdown">
                       <use xlink:href="svg/sprite.svg#svg--dropdown_bottom"></use>
                     </svg>
-              <select>
-                <option value="rus">rus</option>
-                <option value="eng">english</option>
-              </select>
+              <ul class="switch-language__sub-menu">
+                <li>English</li>
+                <li>Russian</li>
+                <li>עִבְרִית</li>
+              </ul>
             </div>
+            <!--.nav-bar__switch-language-->
+            <!--    +add_svg({class: "nav-bar__switch-language__icon", icon: "www"})-->
+            <!--    +add_svg({class: "nav-bar__switch-language__dropdown", icon: "dropdown_bottom"})-->
+            <!--    select-->
+            <!--        option(value="rus") rus-->
+            <!--        option(value="eng") english-->
           </div>
         </div>
       </section>
@@ -155,6 +163,10 @@
           </nav>
         </div>
       </div>
+      <div class="go-up-container go-up-floating-button"><a class="go-up" href="#">
+                      <svg class="arrow-up">
+                        <use xlink:href="svg/sprite.svg#svg--arrow-up"></use>
+                      </svg></a></div>
     </section>
     <section class="footer">
       <section class="call-back">

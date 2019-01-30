@@ -1,3 +1,5 @@
+include ./mixins/svg_sprite
+
 doctype html
 html(lang="RU")
     head
@@ -17,6 +19,10 @@ html(lang="RU")
 
         section.content
             block content
+
+            .go-up-container.go-up-floating-button
+                a(href="#").go-up
+                    +add_svg({class: "arrow-up", icon: "arrow-up"})
 
         section.footer
             include components/call-back/call-back

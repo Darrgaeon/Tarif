@@ -139,10 +139,15 @@
       color: #9242F8
       cursor: pointer
 
-    li:active
-      border-radius: 6px
-      background: #9242F8
-      color: $color-white
+    //li:active
+    //  border-radius: 6px
+    //  background: #9242F8
+    //  color: $color-white
+
+.item-provider-active
+  border-radius: 6px
+  background: #9242F8 !important
+  color: $color-white !important
 
 
 .container-providers-logo
@@ -190,6 +195,7 @@
     background: linear-gradient(136.85deg, #4D85F1 1.08%, #3DAEFF 100%)
     border-radius: 6px
     position: relative
+    overflow: hidden
 
     .slide
       padding: 30px 23px 30px 30px
@@ -225,14 +231,14 @@
       margin: 0
       padding: 0
       list-style: none
-      width: 100%
+      width: auto
       height: auto
       display: flex
       align-items: center
-      justify-content: center
+      justify-content: left
       flex-wrap: wrap
       top: 25px
-      left: -129px
+      left: 26px
       z-index: 2
 
       li
@@ -262,6 +268,7 @@
 
       .slick-active
         background: $color-white
+
 
 .gallery-pattern
   width: 130px
@@ -296,3 +303,28 @@
     top: 176px
     right: -170px
     background: #51ABFF
+
+
+.go-up-floating-button
+  display: block
+  position: absolute
+  top: 0
+  right: 120px
+  height: 100%
+
+  .go-up
+    position: sticky
+    display: flex
+    top: 200px
+    color: red
+    text-decoration: none
+    width: 51px
+    height: 51px
+    background: $color-white
+
+    .arrow-up
+      width: 10px
+      height: 10px
+      position: absolute
+      top: 25px
+      left: 20px

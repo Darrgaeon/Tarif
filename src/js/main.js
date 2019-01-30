@@ -8,13 +8,12 @@ function init() {
 
     $(document).ready(function () {
         // Globals
-        // require("ddslick/dist/jquery.ddslick.min");
         require("slick-carousel/slick/slick.min");
         require("./components/collapse")();
-        require("./components/items-category")();
         require("./components/carousel")();
         require("./components/sub-menu")();
-        // require("./components/select")();
+        require("./components/switch-language")();
+        require("./components/items-providers")();
     });
 }
 
