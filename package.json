@@ -53,6 +53,7 @@
     "htmlhint": "^0.10.1",
     "imagemin-jpeg-recompress": "^6.0.0",
     "serve-index": "^1.9.1",
+    "slick-carousel": "^1.8.1",
     "uglifyify": "^5.0.1",
     "yargs": "^12.0.5"
   },

@@ -4,6 +4,7 @@
 .content-heading-tariff
   padding-top: 27px
   height: 650px
+  margin-bottom: 62px
 
   img
     position: absolute
@@ -20,14 +21,6 @@
   a:last-child
     position: relative
     top: -47px
-
-  a:hover
-    .container-category a
-      margin: 0 6px !important
-    .item-category
-      width: 296px
-      height: 197px
-
 
 .container-content-ellipses
   position: absolute
@@ -91,4 +84,215 @@
 
 .content-description-text
   background: $color-white
-  padding: 46px 50px 48px 49px
+  padding: 41px 50px 35px
+  position: relative
+  margin-bottom: 95px
+
+.logo-tariff
+  width: 77px
+  height: 96px
+  position: absolute
+  top: 20px
+  right: 28px
+
+
+.content-home-description-providers
+  margin-bottom: 80px
+  h2
+    line-height: normal
+    font-size: 30px
+    margin-bottom: 22px
+  .content-providers
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+.container-block-left
+  width: 791px
+
+.container-providers
+  margin-bottom: 12px
+  background: $color-white
+  ul
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: row
+    li
+      margin: 0
+      list-style: none
+      font-weight: 500
+      line-height: normal
+      font-size: 14px
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: $color-black
+      padding: 22px 46px 21px 48px
+      background: $color-white
+      border-right: 1px solid #EBEEF3
+
+
+    li:last-child
+      border-right: 0
+
+    li:hover
+      color: #9242F8
+      cursor: pointer
+
+    li:active
+      border-radius: 6px
+      background: #9242F8
+      color: $color-white
+
+
+.container-providers-logo
+  ul
+    padding: 0
+    margin: 0
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    li
+      margin: 12.5px
+      list-style: none
+      background: $color-white
+      display: flex
+      justify-content: center
+      align-items: center
+      a
+        padding: 42px 33px 41px 33px
+
+    li:first-child, li:nth-child(5)
+      margin-left: 0
+    li:nth-child(4), li:last-child
+      margin-right: 0
+    li:nth-child(5), li:nth-child(6), li:nth-child(7), li:nth-child(8)
+      margin-bottom: 0
+
+    a:hover
+      border-bottom: 6px solid #9242F8
+      padding-bottom: 35px
+
+
+.home-logo-mts
+  width: 113px
+  height: 40px
+
+.home-container-gallery
+  width: 386px
+  margin-left: auto
+  position: relative
+  top: 2px
+  right: -2px
+
+  .gallery-slides
+    width: 386px
+    background: linear-gradient(136.85deg, #4D85F1 1.08%, #3DAEFF 100%)
+    border-radius: 6px
+    position: relative
+
+    .slide
+      padding: 30px 23px 30px 30px
+      position: relative
+
+      h5
+        line-height: (28/20)
+        color: $color-white
+        font-weight: bold
+        margin-top: 40px
+        margin-bottom: 13px
+
+      p
+        line-height: (24/16)
+        color: $color-white
+        margin-bottom: 48px
+
+      .container-button
+        display: flex
+        a
+          font-weight: 500
+          line-height: normal
+          font-size: 16px
+          letter-spacing: 0.03em
+          text-transform: uppercase
+          color: $color-white
+          padding: 21px 47px 21px 46px
+          background: #FF971C
+          border-radius: 6px
+
+    .slick-dots
+      position: absolute
+      margin: 0
+      padding: 0
+      list-style: none
+      width: 100%
+      height: auto
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      top: 25px
+      left: -129px
+      z-index: 2
+
+      li
+        width: 16px
+        height: 16px
+        margin: 5px
+        position: relative
+        cursor: pointer
+        transition: $transition-duration
+        border-radius: 100%
+        &:before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          border: 2px solid $color-white
+          transition: $transition-duration
+          border-radius: 100%
+
+        button
+          display: none
+
+      li:hover
+        background: rgba(255, 255, 255, 0.3)
+
+      .slick-active
+        background: $color-white
+
+.gallery-pattern
+  width: 130px
+  height: 66px
+  position: absolute
+  top: 29px
+  right: 31px
+  z-index: -1
+
+.gallery-container-ellipses
+  width: 386px
+  height: 354px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  overflow: hidden
+
+  .ellipse
+    content: ""
+    width: 323px
+    height: 323px
+    border-radius: 50%
+    position: absolute
+
+  .ellipse-top
+    top: -179px
+    left: -175px
+    background: #4A97F9
+
+  .ellipse-bottom
+    top: 176px
+    right: -170px
+    background: #51ABFF

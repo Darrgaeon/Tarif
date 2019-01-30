@@ -1,5 +1,6 @@
 include ../../mixins/svg_sprite
 
+//- new Array(3) -> [undefined, undefined, undefined]
 
 .container
     .content-home
@@ -7,7 +8,7 @@ include ../../mixins/svg_sprite
             .container-content-ellipses
                 img(
                     src="img/ellipse-home-1.svg"
-                    style="width: 1238px; height: 777px; top: -153px"
+                    style="width: 1238px; height: 777px; top: -271px"
                 )
 
                 img(
@@ -103,3 +104,34 @@ include ../../mixins/svg_sprite
             p Tarif это зафиксированная на каком-либо материальном носителе человеческая мысль, в общем плане связная и полная последовательность символов. Существуют две основные трактовки понятия текст: имманентная и репрезентативная, более частная!
             +add_svg({class: "logo-tariff", icon: "logo-tariff"})
 
+        .content-home-description-providers
+            h2 Провайдеры
+            .content-providers
+                .container-block-left
+                    .container-providers
+                        ul
+                            li Пакеты 3 в 1
+                            li Интернет
+                            li Сотовая связь
+                            li Телевидение
+                    .container-providers-logo
+                        ul
+                            each _ in new Array(8)
+                                li
+                                    a(href="#")
+                                        +add_svg({class: "home-logo-mts", icon: "logo-mts"})
+
+                .home-container-gallery
+                    .gallery-slides
+                        each _ in new Array(3)
+                            .slide
+                                h5 Более 1 000 человек ежедневно просматривают актуальные предложения услуг связи
+                                p Мы предоставляем свежую информацию по тарифам популярных провайдеров
+                                .container-button
+                                    a(href="#") Популярные пакеты 3 в 1
+
+                                +add_svg({class: "gallery-pattern", icon: "pattern-slide"})
+
+                                .gallery-container-ellipses
+                                    .ellipse.ellipse-top
+                                    .ellipse.ellipse-bottom
