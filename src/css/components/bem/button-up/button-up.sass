@@ -1,0 +1,29 @@
+@import "../../vars"
+@import "../../functions"
+
+.go-up-floating-button
+  display: block
+  position: absolute
+  top: 0
+  right: 120px
+  height: 100%
+
+  .go-up
+    position: sticky
+    display: flex
+    top: 200px
+    color: red
+    text-decoration: none
+    width: 51px
+    height: 51px
+    background: $color-white
+
+    &:hover
+      background: darken($color-white, 5%)
+
+    .arrow-up
+      width: 10px
+      height: 10px
+      position: absolute
+      top: 25px
+      left: 20px

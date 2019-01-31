@@ -9,18 +9,11 @@ section.nav-bar
             include ../nav-bar/adaptive-menu
 
             .nav-bar__switch-language
-                button Rus
+                span Rus
                 +add_svg({class: "nav-bar__switch-language__icon", icon: "www"})
                 +add_svg({class: "nav-bar__switch-language__dropdown", icon: "dropdown_bottom"})
 
                 ul.switch-language__sub-menu
-                    li English
-                    li Russian
-                    li עִבְרִית
-
-            //.nav-bar__switch-language
-            //    +add_svg({class: "nav-bar__switch-language__icon", icon: "www"})
-            //    +add_svg({class: "nav-bar__switch-language__dropdown", icon: "dropdown_bottom"})
-            //    select
-            //        option(value="rus") rus
-            //        option(value="eng") english
+                    li(data-short-name="Eng") English
+                    li(data-short-name="Rus") Russian
+                    li(data-short-name="רִית") עִבְרִית

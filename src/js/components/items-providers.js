@@ -1,13 +1,13 @@
 module.exports = function () {
 
-    const array = $( ".container-providers ul li" );
-        $(array).click(function () {
-            const index = $(array).index(this);
+    const $array_providers = $( ".container-providers ul li" );
+        $array_providers.on("click", function () {
+            const index = $($array_providers).index(this);
 
-            $.each(array, function (item, value) {
+            $.each($array_providers, function (item, value) {
                 $(value).removeClass("item-provider-active");
             });
 
-            array[index].classList.toggle("item-provider-active");
+            $array_providers[index].classList.toggle("item-provider-active");
         });
 };

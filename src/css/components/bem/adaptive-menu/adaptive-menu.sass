@@ -9,7 +9,6 @@
   padding: 17px 0
   z-index: 10
 
-
   .nav-bar-button
     z-index: 10
     outline: none
@@ -36,27 +35,28 @@
     padding: 0
     display: flex
     flex-direction: row
-    li
-      display: flex
-      justify-content: center
-      align-items: center
-      list-style: none
-      margin: 0 1px
-      position: relative
-      a
-        padding: 18px 17px 17px 18px
-        color: $color-white
-        font-weight: 500
-        line-height: normal
-        letter-spacing: 0.02em
-        text-transform: uppercase
 
-    li:first-child
-      margin-left: 0
+  ul > li
+    display: flex
+    justify-content: center
+    align-items: center
+    list-style: none
+    margin: 0 1px
+    position: relative
+    a
+      padding: 18px 17px 17px 18px
+      color: $color-white
+      font-weight: 500
+      line-height: normal
+      letter-spacing: 0.02em
+      text-transform: uppercase
 
-    li:hover
-      background: #202039
-      border-radius: 3px
+  li:first-child
+    margin-left: 0
+
+  ul > li:hover
+    background: #202039
+    border-radius: 3px
 
   .nav-bar-button:hover
     background: #202039
@@ -69,11 +69,10 @@ ul
       width: 266px
       display: none
       position: absolute
-      margin-top: 6px
       background: $color-menu
       box-shadow: 0 0 30px rgba(40, 48, 79, 0.15)
       border-radius: 6px
-      top: 108px
+      top: 85px
       left: 3px
 
       li
