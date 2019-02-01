@@ -28,6 +28,14 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
+    <div class="mobile-menu"><span class="nav-bar-button-close">&times</span>
+      <ul>
+        <li><a href="#">Сотовая связь</a></li>
+        <li><a href="#">Интернет</a></li>
+        <li><a href="#">Телевидение</a></li>
+        <li><a href="#">Пакеты 3 в 1</a></li>
+      </ul>
+    </div>
     <section class="header">
       <section class="nav-bar">
         <div class="container">
@@ -36,7 +44,7 @@
                       <use xlink:href="svg/sprite.svg#svg--logo"></use>
                     </svg></a>
             <nav class="nav-bar-menu">
-              <button class="nav-bar-button">
+              <button class="nav-bar-button-open">
                       <svg class="nav-bar-menu__burger">
                         <use xlink:href="svg/sprite.svg#svg--burger"></use>
                       </svg><span>Меню</span>
@@ -50,7 +58,6 @@
                     <li><a href="#">Выделить сообщение</a></li>
                     <li><a href="#">Посмотреть сколько стоит</a></li>
                     <li><a href="#">Интернет пакет</a></li>
-                    <!--.arrow-->
                   </ul>
                 </li>
                 <li><a href="#">Пакеты 3 в 1</a></li>
@@ -66,7 +73,7 @@
               <ul class="switch-language__sub-menu">
                 <li data-short-name="Eng">English</li>
                 <li data-short-name="Rus">Russian</li>
-                <li data-short-name="רִית">עִבְרִית</li>
+                <li data-short-name="בְרִית">עִבְרִית</li>
               </ul>
             </div>
           </div>
@@ -88,24 +95,29 @@
             </ul>
           </div>
           <div class="content-description-contacts">
-            <div class="content-forms">
-              <label class="label-contacts">
-                <input class="input-contacts" type="text" placeholder="Имя" name="name">
-              </label>
-              <label class="label-contacts">
-                <input class="input-contacts" type="email" placeholder="Почта" name="email">
-              </label>
-              <label class="label-contacts">
-                <input class="input-contacts input-contacts-phone" type="tel" placeholder="05 ________" name="phone">
-              </label>
-              <textarea class="textarea-contacts" name="comment" placeholder="Ваше сообщение"></textarea>
-              <div class="container-forms-footer">
-                <div class="privacy-policy-contacts"><span>Нажимая на кнопку отправить,</span><span>вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span></div>
-                <div class="container-button-contacts">
-                  <button class="button-send" type="submit">Отправить</button>
+            <form action="#">
+              <div class="content-forms">
+                <label class="label-contacts">
+                  <input class="input-contacts" type="text" placeholder="Имя" name="name">
+                </label>
+                <label class="label-contacts">
+                  <input class="input-contacts" type="email" placeholder="Почта" name="email">
+                </label>
+                <label class="label-contacts">
+                  <input class="input-contacts input-contacts-phone" type="tel" placeholder="05 ________" name="phone">
+                </label>
+                <div class="textarea-container">
+                  <textarea class="textarea-contacts" name="comment" placeholder="Ваше сообщение"></textarea>
+                  <div class="comment-error">This field is required.</div>
+                </div>
+                <div class="container-forms-footer">
+                  <div class="privacy-policy-contacts"><span>Нажимая на кнопку отправить,</span><span>вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span></div>
+                  <div class="container-button-contacts">
+                    <button class="button-send" type="submit">Отправить</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </form>
             <div class="content-sosial-contacts">
               <h3>Соц. сети</h3>
               <div class="container-social-contacts">
@@ -216,7 +228,7 @@
                       <use xlink:href="svg/sprite.svg#svg--logo"></use>
                     </svg></a>
             <nav class="nav-bar-menu">
-              <button class="nav-bar-button">
+              <button class="nav-bar-button-open">
                       <svg class="nav-bar-menu__burger">
                         <use xlink:href="svg/sprite.svg#svg--burger"></use>
                       </svg><span>Меню</span>
@@ -230,7 +242,6 @@
                     <li><a href="#">Выделить сообщение</a></li>
                     <li><a href="#">Посмотреть сколько стоит</a></li>
                     <li><a href="#">Интернет пакет</a></li>
-                    <!--.arrow-->
                   </ul>
                 </li>
                 <li><a href="#">Пакеты 3 в 1</a></li>

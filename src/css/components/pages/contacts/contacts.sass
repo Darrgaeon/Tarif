@@ -24,6 +24,7 @@
   margin-left: 9px
   margin-right: 8px
   margin-bottom: 15px
+  position: relative
 
 .input-contacts
   width: 245px
@@ -36,13 +37,35 @@
   &::placeholder
     color: #536396
 
+.label-contacts
+  #name-error, #phone-error, #email-error
+    font-family: Rubik, sans-serif
+    color: red
+    position: absolute
+    top: -23px
+    left: 0
+    font-size: 14px
+    font-weight: bold
+    width: 280px
+
+.textarea-container
+  position: relative
+  .comment-error
+    font-family: Rubik, sans-serif
+    color: red
+    position: absolute
+    top: 200px
+    left: 0
+    font-size: 16px
+    font-weight: bold
+    width: 280px
+
+
 .label-contacts:first-child
   margin-left: 0
 
 .label-contacts:nth-child(3)
   margin-right: 0
-
-
 
 .input-contacts-phone
   font-family: Roboto, sans-serif
@@ -111,7 +134,7 @@
     text-transform: uppercase
     color: $color-white
     transition: background $transition-duration
-    background: #12C78C
+    background: #0EB780
     padding: 19px 65px 18px 66px
     border-width: 0
     border-radius: 6px
@@ -119,7 +142,7 @@
     outline: none
     cursor: pointer
     &:hover
-      background: lighten(#12C78C, 10%)
+      background: #12C78C
 
 
 .content-sosial-contacts
@@ -238,6 +261,7 @@
   position: relative
   //filter: blur(20px)
   z-index: 2
+  transition: $transition-duration
 
   h2
     line-height: (33/27)
@@ -257,3 +281,5 @@
   top: 145px
   opacity: .50
 
+.comment-error
+  display: none

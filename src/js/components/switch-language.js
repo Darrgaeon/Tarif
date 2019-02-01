@@ -1,15 +1,19 @@
 module.exports = function () {
 
-    const $nav_bar_switch_language = $(".nav-bar__switch-language span");
+    const transition_duration = 200;
+    const $nav_bar_switch_language = $(".nav-bar__switch-language");
     const $switch_language_sub_menu = $(".switch-language__sub-menu");
 
     $nav_bar_switch_language.on("click", function() {
-        $switch_language_sub_menu.toggle();
+        $switch_language_sub_menu.fadeToggle(transition_duration);
     });
 
     $switch_language_sub_menu.on("click", "li",function (){
         const getLanguage = $(this).data("short-name");
-        $switch_language_sub_menu.toggle();
-        $nav_bar_switch_language.text(getLanguage);
+        $(".nav-bar__switch-language span").text(getLanguage);
+    });
+
+    $switch_language_sub_menu.mouseleave(function(){
+        $(this).stop().slideUp();
     });
 };

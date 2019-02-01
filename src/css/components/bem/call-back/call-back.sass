@@ -57,20 +57,48 @@
       font-size: 16px
       letter-spacing: 0.02em
       color: $color-white
-      background: #12C78C
+      background: #0EB780
       padding: 17px 68px
       border-width: 0
       border-radius: 6px
       cursor: pointer
+      transition: $transition-duration
       &:hover
-        background: lighten(#12C78C, 10%)
+        background: #12C78C
 
     .container-input-name
       margin: 0 12.5px 0 0
+      //position: relative
+
+      label
+        position: relative
+
+      #name-error
+        color: red
+        position: absolute
+        top: -30px
+        left: 0px
+        font-size: 16px
+        font-weight: bold
+        width: 280px
+
 
     .container-input-phone
       margin: 5px 12.5px 0 0
       font-family: Roboto, sans-serif
+
+      label
+        position: relative
+
+      #phone-error
+        font-family: Rubik, sans-serif
+        color: red
+        position: absolute
+        top: 60px
+        left: 0px
+        font-size: 16px
+        font-weight: bold
+        width: 280px
 
     .container-button
       margin-left: 12.5px

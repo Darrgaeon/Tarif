@@ -1,0 +1,39 @@
+@import "../../vars"
+@import "../../functions"
+
+
+.mobile-menu
+  z-index: 100
+  height: 100%
+  width: 0
+  position: fixed
+  top: 0
+  left: 0
+  background-color: $color-menu
+  overflow-x: hidden
+  transition: 0.5s
+  padding-top: 50px
+  ul
+    padding: 0
+    margin: 0
+    li
+      a
+        padding: 15px
+        text-decoration: none
+        color: $color-white
+        display: block
+        transition: 0.3s
+        font-size: 18px
+        &:hover
+          background: lighten($color-menu, 10%)
+
+  .nav-bar-button-close
+    position: absolute
+    top: 0
+    right: 25px
+    font-size: 36px
+    cursor: pointer
+    color: $color-white
+    &:hover
+      transform: rotate(-45deg)
+

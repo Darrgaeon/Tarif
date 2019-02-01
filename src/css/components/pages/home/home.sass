@@ -24,7 +24,6 @@
   justify-content: center
 
 .container-ellipses-center
-  //width: 1199px
   width: 100%
   height: 631px
   position: relative
@@ -39,7 +38,6 @@
     background: linear-gradient(103deg, #6363E7 33.73%, #2390CA 100%)
     border-radius: 50%
     position: relative
-    //left: -1px
 
     h2, p
       text-align: center
@@ -127,6 +125,7 @@
       padding: 22px 46px 21px 48px
       background: $color-white
       border-right: 1px solid #EBEEF3
+      transition: $transition-duration
 
 
     li:last-child
@@ -135,11 +134,6 @@
     li:hover
       color: #9242F8
       cursor: pointer
-
-    //li:active
-    //  border-radius: 6px
-    //  background: #9242F8
-    //  color: $color-white
 
 .item-provider-active
   border-radius: 6px
@@ -163,6 +157,7 @@
       align-items: center
       a
         padding: 42px 33px 41px 33px
+        //transition: $transition-duration
 
     li:first-child, li:nth-child(5)
       margin-left: 0
@@ -220,8 +215,11 @@
           text-transform: uppercase
           color: $color-white
           padding: 21px 47px 21px 46px
-          background: #FF971C
+          background: #FD9F32
           border-radius: 6px
+          transition: $transition-duration
+          &:hover
+            background: #FF971C
 
     .slick-dots
       position: absolute
