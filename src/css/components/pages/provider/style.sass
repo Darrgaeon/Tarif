@@ -1,2 +1,72 @@
 .provider
   padding: 25px 0 101px 0
+
+
+@media screen and (max-width: 1200px)
+  .content-card
+    .content-description
+      .content-description-provider
+        .container-info
+          width: 100%
+
+
+@media screen and (max-width: 1100px)
+  .content-card
+    .content-description-services
+      .content-service
+        .content-info-service
+          .container-button
+            margin-right: 0
+
+          .container-cost
+            margin-right: 0
+
+
+@media screen and (max-width: 960px)
+  .content-card
+    .content-description-services
+      .content-service
+        .content-info-service
+          .container-button
+            order: 1
+            width: 100%
+            display: flex
+            justify-content: center
+            text-align: center
+            a
+              width: 50%
+
+          .container-cost
+            width: 100%
+            margin-bottom: 20px
+            h4, p
+              text-align: center
+
+          .container-description-tarif
+            width: 100%
+            margin-bottom: 20px
+            h4, p
+              text-align: center
+
+
+@media screen and (max-width: 600px)
+  .content-card
+    .content-description-services
+      .content-service
+        .content-info-service
+          .container-button
+            a
+              width: 100%
+
+
+@media screen and (max-width: 500px)
+  .content-card
+    .content-description
+      .content-description-provider
+        .container-info
+          .container-button
+            text-align: center
+
+        .logo-mts
+          display: none
+

@@ -11,3 +11,80 @@
   border-radius: 6px
   margin-top: 25px
   margin-bottom: 94px
+
+
+@media screen and (max-width: 1230px)
+  .content-category
+    h1
+     text-align: center
+
+    .container-category
+      justify-content: center
+      margin-bottom: 250px
+
+      a:first-child, a:last-child
+        top: 0
+      a
+        margin: 12.5px
+
+
+
+@media screen and (max-width: 1200px)
+  .content-description-contacts
+    .content-forms
+      &:before
+        display: none
+
+
+@media screen and (max-width: 1150px)
+  .content-description-contacts
+    padding: 25px
+    .content-forms
+      width: 100%
+      .label-contacts
+        width: 100%
+        margin: 10px 0
+        .input-contacts
+          width: 100%
+
+      .container-forms-footer
+        .container-button-contacts
+          top: 0
+          margin-bottom: 30px
+
+    .content-sosial-contacts
+      width: 100%
+      text-align: center
+      margin: 0
+      .container-social-contacts
+        display: flex
+        justify-content: space-between
+
+
+@media screen and (max-width: 640px)
+  .content-category
+    .container-category
+      margin-bottom: 650px
+
+
+@media screen and (max-width: 525px)
+  .content-description-contacts
+      .container-forms-footer
+        display: flex
+        flex-direction: column
+        .privacy-policy-contacts
+          width: 100%
+          text-align: center
+          margin-bottom: 20px
+
+        .container-button-contacts
+          width: 100%
+          button
+            width: 100%
+
+
+@media screen and (max-width: 415px)
+  .content-description-contacts
+    .content-sosial-contacts
+      .container-social-contacts
+        justify-content: center

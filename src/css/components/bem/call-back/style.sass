@@ -2,3 +2,74 @@
   background: linear-gradient(155.82deg, #5858D7 33.73%, #2390CA 100%)
   font-weight: normal
   padding: 40px 0 32px 0
+
+
+@media screen and (max-width: 1120px)
+  .call-back
+    .container-images
+      &__mobile
+        display: none
+
+@media screen and (max-width: 904px)
+  .call-back
+    .call-back__have-questions
+      width: 100%
+      text-align: center
+      margin: 0 0 30px 0
+
+    .call-back__me
+      width: 100%
+      .container-input-name, .container-input-phone
+        text-align: center
+        width: 100%
+        margin: 0
+        label
+          width: 60%
+          input
+            width: 100%
+
+      .privacy-policy
+        width: 100%
+        text-align: center
+        margin-top: 30px
+        padding: 0
+        order: 1
+
+      .container-button
+        width: 100%
+        text-align: center
+        margin: 20px 0 0 0
+        .button-send
+          width: 60%
+
+    .container-images
+      &__pattern-1
+        width: 548px
+        height: 436px
+        left: 6px
+        top: -19px
+
+      &__pattern-2
+        width: 548px
+        height: 436px
+        top: -19px
+        left: 592px
+
+
+@media screen and (max-width: 492px)
+  .call-back
+    .call-back__me
+      .container-input-name, .container-input-phone
+        label
+          width: 100%
+          input
+            width: 100%
+
+      .container-button
+        .button-send
+          width: 100%
+
+
+@media screen and (max-width: 330px)
+  .call-back
+    //margin-right: 13px

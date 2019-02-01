@@ -5,3 +5,97 @@
   .footer-credits
     padding: 20px 0
     background: #2F2F4B
+
+
+
+@media screen and (max-width: 1200px)
+  .footer
+    .nav-links
+      &-container
+        .logo
+          margin-right: 0
+
+        .nav-bar-menu
+          margin-right: auto
+          margin-left: auto
+
+    .container-social-bottom-menu
+      margin-left: 0
+
+
+@media screen and (max-width: 932px)
+  .footer
+    .nav-links
+      &-container
+        .nav-bar-menu ul
+          display: none
+
+    .footer-credits
+      .footer-credits__copyright
+        margin-right: 0
+
+      .footer-credits-links
+        margin: auto
+
+        .footer-credits-links-link
+          margin: 0 5px
+
+        .footer-credits-links-link:first-child
+          margin-left: 0
+
+        .footer-credits-links-link:last-child
+          margin-right: 0
+
+      .rusodot-credits
+        margin-left: 0
+
+
+@media screen and (max-width: 810px)
+  .footer
+    .footer-credits
+      .footer-credits__copyright
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-bottom: 10px
+
+      .footer-credits-links
+        margin-bottom: 5px
+        .footer-credits-links-link
+          margin: 0
+
+      .rusodot-credits
+        width: 100%
+        display: flex
+        justify-content: center
+
+
+
+@media screen and (max-width: 504px)
+  .footer
+    .footer-credits
+      .footer-credits-links
+        width: 100%
+        display: flex
+        justify-content: center
+
+
+@media screen and (max-width: 395px)
+  .footer
+    .nav-links
+      &-container
+        .nav-bar-menu
+          button
+            font-size: 12px
+
+        .container-social-bottom-menu
+          //margin-right: 13px
+          .container-icon
+            margin: 3px
+
+          .container-icon:first-child
+            margin-left: 0
+
+      &__logo
+        width: 89px
+        height: 27px
