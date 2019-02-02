@@ -6,7 +6,7 @@ module.exports = function () {
         return !(/_/.test(value));
     });
 
-    $.validator.addMethod("nameCheck", function (value, element) {
+    $.validator.addMethod("textCheck", function (value, element) {
         if (value.length > 2) {
             //
             return !(/[0-9_!?.+\-]+/.test(value));

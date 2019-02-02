@@ -5,11 +5,12 @@ function init() {
     this.jQuery = this.$;
 
     require("svg4everybody/dist/svg4everybody")();
+    require("jquery-validation/dist/jquery.validate");
+    require("jquery.maskedinput/src/jquery.maskedinput");
 
     $(document).ready(function () {
         // Globals
         require("slick-carousel/slick/slick.min");
-        require("jquery-validation/dist/jquery.validate");
 
         // Modules
         require("./components/collapse")();

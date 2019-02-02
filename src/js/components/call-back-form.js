@@ -1,12 +1,34 @@
 module.exports = function () {
 
-    const $сallbackContainer = $(".call-back");
+    // $('form').validate({
+    //     showErrors: function(errorMap, errorList) {
+    //
+    //     },
+        // onfocusout: false,
+        // onkeyup: false,
+        // rules: {
+        //     email: {
+        //         required: true
+        //     }
+        // },
+        // messages: {
+        //     email: {
+        //         required: 'The email is required'
+        //     }
+        // }
+    // });
 
-    if ($сallbackContainer.length) {
+    const $сall_back_container = $(".call-back");
 
-        const $callbackForm = $(".call-back__me form");
+    if ($сall_back_container.length) {
 
-        $callbackForm.validate({
+        const $call_back_form = $(".call-back__me form");
+
+        $call_back_form.find("input[name='phone']").mask("05 99999999");
+
+        $call_back_form.validate({
+            errorPlacement: function(error, element) {},
+
             rules: {
                 phone: {
                     required: true,
@@ -16,7 +38,7 @@ module.exports = function () {
                 name: {
                     required: true,
                     minlength: 4,
-                    nameCheck: true
+                    textCheck: true
                 },
                 email: {
                     required: true,
@@ -24,7 +46,7 @@ module.exports = function () {
                     minlength: 2
                 },
                 message: {
-                    required: true
+                    // required: true
                 }
             }
         });
