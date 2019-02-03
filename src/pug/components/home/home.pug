@@ -121,12 +121,14 @@ include ../../mixins/svg_sprite
                                     a(href="#")
                                         +add_svg({class: "home-logo-mts", icon: "logo-mts"})
 
+
                 .home-container-gallery
                     .gallery-slides
                         each _ in new Array(3)
                             .slide
-                                h5 Более 1 000 человек ежедневно просматривают актуальные предложения услуг связи
-                                p Мы предоставляем свежую информацию по тарифам популярных провайдеров
+                                .container-text
+                                    h5 Более 1 000 человек ежедневно просматривают актуальные предложения услуг связи
+                                    p Мы предоставляем свежую информацию по тарифам популярных провайдеров
                                 .container-button
                                     a(href="#") Популярные пакеты 3 в 1
 
@@ -135,7 +137,3 @@ include ../../mixins/svg_sprite
                                 .gallery-container-ellipses
                                     .ellipse.ellipse-top
                                     .ellipse.ellipse-bottom
-
-//.go-up-container.go-up-floating-button
-//    a(href="#").go-up
-//        span наверх

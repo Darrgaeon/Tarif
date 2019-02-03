@@ -33,7 +33,6 @@
   border: 1px solid #D6E4F5
   padding: 20px 18px
   font-size: 18px
-  outline: none
   &::placeholder
     color: #536396
 
@@ -45,18 +44,6 @@
     top: -23px
     left: 0
     font-size: 14px
-    font-weight: bold
-    width: 280px
-
-.textarea-container
-  position: relative
-  .comment-error
-    font-family: Rubik, sans-serif
-    color: red
-    position: absolute
-    top: 200px
-    left: 0
-    font-size: 16px
     font-weight: bold
     width: 280px
 
@@ -80,7 +67,6 @@
   border: 1px solid #D6E4F5
   padding: 13px 18px
   margin-bottom: 34px
-  outline: none
   resize: none
   &::placeholder
     font-family: Roboto, sans-serif
@@ -208,22 +194,24 @@
 
 
 .content-category
-  margin-bottom: 28px
+  margin-bottom: 14px
   h1
     line-height: normal
     font-size: 30px
-    margin-bottom: 16px
+    margin-bottom: 6px
 
 .container-category
   width: 100%
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  height: 197px
+  //height: 197px
+  height: 216px
   align-items: center
+  border-radius: 6px
+  overflow: hidden
 
   a
-    //margin: 0 (25px/2)
     margin: 0 12.5px
 
   a:first-child, a:hover:first-child
@@ -245,6 +233,9 @@
       z-index: -1
       border-radius: 6px
 
+    .item-category::after
+      top: 45px
+
     .category-icon-arrow
       opacity: 1
 
@@ -257,9 +248,20 @@
   border-radius: 6px
   padding: 25px 0 30px 30px
   position: relative
-  //filter: blur(20px)
-  z-index: 2
+  z-index: 10
   transition: $transition-duration
+  &:after
+    content: ""
+    filter: blur(20px)
+    background: inherit
+    width: 252px
+    height: 110px
+    z-index: -3
+    position: relative
+    top: 30px
+    left: -15px
+    border-radius: 6px
+
 
   h2
     line-height: (33/27)

@@ -5,10 +5,8 @@ module.exports = function () {
     if ($contacts_description_container.length) {
 
         const $contacts_form = $(".content-description-contacts form");
-        const $contacts_check_validation_textarea = $(".content-description-contacts form textarea");
-        const $comment_error = $(".comment-error");
 
-        $contacts_form.find("input[name='phone']").mask("+7 (999) 999-99-99");
+        $contacts_form.find("input[name='phone']").mask("05 99999999");
 
         $contacts_form.validate({
             errorPlacement: function(error, element) {},
@@ -39,18 +37,5 @@ module.exports = function () {
                 }
             }
         });
-
-        $contacts_check_validation_textarea.bind('input property change', function(e) {
-            e.preventDefault();
-
-            e.target.textLength <= 3
-                ? $contacts_check_validation_textarea.addClass("textarea-valid")
-                : $contacts_check_validation_textarea.removeClass("textarea-valid");
-
-            $contacts_check_validation_textarea.hasClass("textarea-valid")
-                ? $comment_error.css("display", "block")
-                : $comment_error.css("display", "none");
-        });
-
     }
 };
